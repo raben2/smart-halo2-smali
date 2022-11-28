@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/backgroundGray" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/veryWhite" android:padding="@dimen/medium_padding" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/assistantTextGray" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/touch_input_description" />
+        <TextView android:textColor="@color/veryDark" android:id="@id/touch_input_not_supported" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:text="@string/touch_input_firmware_version" />
+    </LinearLayout>
+    <ImageView android:background="@color/spacerGray" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="18.0dip" />
+</LinearLayout>

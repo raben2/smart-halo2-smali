@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/instabug_edit_text_phone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/ib_hint_phone_number" android:layout_weight="1.0" android:inputType="phone" android:textAlignment="viewStart" android:paddingEnd="@dimen/ib_core_dimen_8" style="@style/InstabugEditTextStyle" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/instabug_image_button_phone_info" android:background="@null" android:paddingTop="@dimen/ib_bug_vus_item_title_margin" android:paddingBottom="@dimen/ib_bug_vus_item_title_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/ib_bug_vus_item_title_margin" app:srcCompat="@drawable/ibg_bug_ic_phone_info" />
+    </LinearLayout>
+    <View android:id="@id/instabug_view_separator" android:background="?instabug_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/instabug_edit_text_phone" />
+</LinearLayout>

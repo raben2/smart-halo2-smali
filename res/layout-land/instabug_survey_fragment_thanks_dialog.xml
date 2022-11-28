@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:background="?survey_container_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="48.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="?survey_container_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/survey_shadow" android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:id="@id/imgLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/instabug_img_thanks" android:background="@drawable/ibg_survey_ic_thanks_background" android:layout_width="104.0dip" android:layout_height="104.0dip" android:src="@drawable/ibg_survey_ic_survey_thankyou" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_toRightOf="@id/imgLayout" android:layout_alignTop="@id/imgLayout" android:layout_alignBottom="@id/imgLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:textSize="@dimen/ib_survey_thanks_title" android:textColor="#ff006fff" android:id="@id/txt_thanks_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/instabug_custom_survey_thanks_title" />
+                <TextView android:textSize="@dimen/ib_survey_thanks_subtitle" android:textColor="@color/instabug_text_color_light_grey" android:gravity="start" android:id="@id/txtSubTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/instabug_custom_survey_thanks_subtitle" android:lineSpacingExtra="4.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" layout="@layout/instabug_lyt_pbi" />
+    </RelativeLayout>
+</RelativeLayout>

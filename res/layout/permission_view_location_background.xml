@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/veryWhite" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/statusBar" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:id="@id/header" android:paddingTop="@dimen/onboarding_header_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/permissions_location_header" android:layout_below="@id/statusBar" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_above="@id/permissionButton" android:layout_below="@id/header">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/veryBlack" android:id="@id/descriptionPart1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/permissions_location_background_part_1" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/veryBlack" android:id="@id/descriptionPart2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/permissions_location_background_part_2" android:layout_below="@id/descriptionPart1" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/APKTOOL_DUMMY_210" android:scaleType="centerInside" android:layout_below="@id/descriptionPart2" />
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView android:id="@id/spacerTop" android:background="@drawable/gradient_white_to_gray" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_below="@id/header" android:layout_alignTop="@id/scrollView" />
+    <ImageView android:id="@id/spacerBottom" android:background="@drawable/gradient_gray_to_white" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignBottom="@id/scrollView" />
+    <Button android:id="@id/permissionButton" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="55.0dip" android:text="@string/permissions_location_give_permission" android:layout_alignParentBottom="true" style="@style/onboardingGreenButton" />
+</RelativeLayout>

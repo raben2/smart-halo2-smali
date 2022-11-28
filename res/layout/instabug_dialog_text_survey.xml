@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/instabug_survey_dialog_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_shadow" />
+    <LinearLayout android:orientation="vertical" android:background="?survey_container_bg" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/survey_shadow">
+        <RelativeLayout android:orientation="vertical" android:background="?survey_container_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include layout="@layout/survey_question_textview" />
+            <include layout="@layout/item_close_survey_button" />
+            <EditText android:id="@id/instabug_edit_text_answer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/survey_bottom_pdi_margin" android:layout_below="@id/instabug_text_view_question" style="@style/InstabugSurveyEditText" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

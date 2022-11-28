@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/drawer_top_section" />
+    <LinearLayout android:orientation="vertical" android:background="@color/drawerMiddleBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/notifications_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerHeight="0.0dip" android:choiceMode="none" />
+    </LinearLayout>
+    <include android:id="@id/halo_status_bar" layout="@layout/halo_status_bar" />
+</merge>

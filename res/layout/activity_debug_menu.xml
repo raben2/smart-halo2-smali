@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_debug_menu_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+    <ScrollView android:background="@color/backgroundGray" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/generalDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="General" card_view:icon="@drawable/APKTOOL_DUMMY_249" />
+                    <layout.DebugMenuItem android:id="@id/intro" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Intro" />
+                    <layout.DebugMenuItem android:id="@id/sh2FirmwareTransfer" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="%1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/sh2ForceInstallGolden" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Force golden firmware installation" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/touchTest" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Touch test" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/enterBootloader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Enter Bootloader" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/loop" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Loop" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/turnOffAnimation" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn off Halo LEDs" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/turnOffOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn off OLED" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/turnOffEverything" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn off everything" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/incrementBrightness" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ Halo LED brightness (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/decrementBrightness" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- Halo LED brightness (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/incrementOledBrightness" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ OLED brightness (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/decrementOledBrightness" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- OLED brightness (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/incrementOledContrast" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ OLED contrast (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/decrementOledContrast" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- OLED contrast (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/triggerCrash" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Trigger crash" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/bleHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="BLE tasks metrics" card_view:icon="@drawable/APKTOOL_DUMMY_249" />
+                    <layout.DebugMenuItem android:id="@id/bleTasksInQueue" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Tasks in queue : %1$s" />
+                    <layout.DebugMenuItem android:id="@id/bleLastTaskSpeed" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Last Task speed : %1$s ms" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/bleLastTaskTimeInQueue" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Last Task time in queue: %1$s ms" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/bleAvgTaskSpeed" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Avg Task Speed : %1$s ms" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/bleAvgTimeInQueue" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Avg Task time in queue : %1$s ms" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/kickstarterHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Kickstarter Sequences" card_view:icon="@drawable/APKTOOL_DUMMY_1bf" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterTurnOff" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn off everything" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterIncrementOffset" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ animation timing offset (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterDecrementOffset" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- animation timing offset (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene15" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Beauty Shot" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene16" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Beauty Shot 2" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene18" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Alarm Warning" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene19" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Alarm Triggered" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene22Nav" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Navigation Elm Street" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene22NavIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ Elm Street angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene22NavDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- Elm Street angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene22Light" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Nightlight" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene22Progress" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Progress" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene25" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Navigation Abbey Road" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene25Increment" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ Abbey Road angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene25Decrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- Abbey Road angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene27" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Uturn" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene29" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Compass" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene31" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Destination" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene33" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Metrics Carousel" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene35" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Weather Alerts" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterScene36" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Call Notification" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterSceneIFTT" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Scene IFTT" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterSceneBattery" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Scene Battery" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterSceneFunnyDestination" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Funny Destination" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterSceneGoNavigation" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Go Navigation" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/kickstarterSceneGoodbye" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Good Bye" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/oledCarouselHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Oled Carousel" card_view:icon="@drawable/debug_item_oled_carousel" />
+                    <layout.DebugMenuItem android:id="@id/showCarousel" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Carousel" />
+                    <layout.DebugMenuItem android:id="@id/oledCarouselTurnOff" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn Off everthing" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/oledCarouselTimingIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ metric value change offset (%1$s ms)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/oledCarouselTimingDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- metric value change offset (%1$s ms)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/setCarouselMode" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Carousel Mode : %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/metricToShow" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Metric to show : %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/setSpeedCarousel" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Speed sequence : %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/setTimeCarousel" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Time sequence : %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/setDistanceCaroussel" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Distance sequence : %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/setClockCarousel" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Clock sequence : %1$s" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/oledHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="OLED" card_view:icon="@drawable/debug_item_oled" />
+                    <layout.DebugMenuItem android:id="@id/showOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show OLED" />
+                    <layout.DebugMenuItem android:id="@id/stopOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn Off OLED" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showNextOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show next OLED" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showPreviousOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show previous OLED" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/incrementOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ OLED screen (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/decrementOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- OLED screen (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/incrementSecondaryOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ secondary OLED screen (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/decrementSecondaryOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- secondary OLED screen (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/oledAnimationDirection" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Animation direction (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/incrementAnimationTimeOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ animation time (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/decrementAnimationTimeOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- animation time (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/incrementStatusOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ status index (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/decrementStatusOled" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- status index (%1$s)" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/pressTourHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Press Tour" card_view:icon="@drawable/debug_item_press_tour" />
+                    <layout.DebugMenuItem android:id="@id/pressTourIntro" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Intro Animation" />
+                    <layout.DebugMenuItem android:id="@id/pressTourTurnOffEveryting" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn Off Everything" />
+                    <layout.DebugMenuItem android:id="@id/pressTourLoop" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Feature Loop" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pressTourCarousel" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Metrics Carousel" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pressTourElmStreet" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Elm Street" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pressTourAbbeyRoad" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Abbey Road" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pressTourLightCycle" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Light Cycle" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pressTourAlarm" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Alarm" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pressTourCallNotification" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Call Notification" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pressTourWeather" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Weather" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/angleTurnHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Navigation Turn" card_view:icon="@drawable/debug_item_turn" />
+                    <layout.DebugMenuItem android:id="@id/showTurn" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Angle turn" />
+                    <layout.DebugMenuItem android:id="@id/turnAnimType" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn still or demo ? (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/turnType" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Turn angle or quick ? (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/angleIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ 1st angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/angleDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- 1st angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/turnProgressIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ 1st progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/turnProgressDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- 1st angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/secondAngleIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ 2nd angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/secondAngleDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- 2nd angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/secondProgressIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ 2nd progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/secondProgressDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- 2nd progress (%1$s)" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/pointerHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Navigation Pointer" card_view:icon="@drawable/debug_item_compass" />
+                    <layout.DebugMenuItem android:id="@id/showPointerStill" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show pointer still" />
+                    <layout.DebugMenuItem android:id="@id/pointerAngleIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ pointer angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pointerAngleDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- pointer angle (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pointerProgressIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ pointer progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/pointerProgressDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- pointer progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showPointerStandby" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show pointer standby" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/roundaboutHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Roundabouts" card_view:icon="@drawable/debug_item_roundabout" />
+                    <layout.DebugMenuItem android:id="@id/showRoundabout1" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Roundabout 1" />
+                    <layout.DebugMenuItem android:id="@id/showRoundabout2" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Roundabout 2" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/roundaboutBlinking" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Roundabout %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/roundaboutMode" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Roundabout mode : %1$s" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/navigationOthersHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Navigation Others" card_view:icon="@drawable/APKTOOL_DUMMY_26c" />
+                    <layout.DebugMenuItem android:id="@id/showDestinationStill" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Destination Still" />
+                    <layout.DebugMenuItem android:id="@id/destinationProgressIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/destinationProgressDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showDestinationDemo" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Destination Demo" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showReroute" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show reroute" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showUturn" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Uturn (%1$s)" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/fitnessHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Fitness" card_view:icon="@drawable/debug_item_fitness" />
+                    <layout.DebugMenuItem android:id="@id/showSpeedometer" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show speedometer" />
+                    <layout.DebugMenuItem android:id="@id/speedometerProgressIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ speedometer progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/speedometerProgressDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- speedometer progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showFitnessProgress" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Fitness Progress" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/toggleFitnessMode" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Fitness mode (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/fitnessProgressIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ Fitness progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/fitnessProgressDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- Fitness progress (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/toggleFitnessPreTracking" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description=" Toggle Fitness pre-tracking (%1$s)" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/assistantHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Assistant" card_view:icon="@drawable/APKTOOL_DUMMY_266" />
+                    <layout.DebugMenuItem android:id="@id/showBatteryLevel" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Battery Level" />
+                    <layout.DebugMenuItem android:id="@id/showLowBattery" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Low Battery" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showClock" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Clock" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/playHorn" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Play Horn" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/showAssistantStill" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Assistant Still" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/smsWithSound" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="SMS with Sound" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/smsWithoutSound" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="SMS without Sound" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/callWithSound" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Call with Sound" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/callWithoutSound" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Call without Sound" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/lightHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Light" card_view:icon="@drawable/debug_item_light" />
+                    <layout.DebugMenuItem android:id="@id/toggleLightOn" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Toggle light state (%1$s)" />
+                    <layout.DebugMenuItem android:id="@id/toggleLightMode" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Toggle light mode (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/lightBrightnessIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="+ Light brightness increment (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/lightBrightnessDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="- Light brightness increment (%1$s)" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/veryWhite" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <layout.DebugItemHeader android:id="@id/alarmHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Alarm" card_view:icon="@drawable/debug_item_alarm" />
+                    <layout.DebugMenuItem android:id="@id/alarmArm" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show arm animation" />
+                    <layout.DebugMenuItem android:id="@id/alarmDisarm" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show disarm animation" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/alarmWarning" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show alarm warning" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/alarmWarningIncrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Increment alarm warning (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/alarmWarningDecrement" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Decrement alarm warning (%1$s)" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/alarmTrigger" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Trigger Alarm" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/alarmDemo" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Show Alarm Demo" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/alarmOff" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Alarm Off" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/tapcodeAddShort" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Add short tap %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/tapcodeAddLong" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Add long tap %1$s" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/removeLastTapcode" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Remove last tap" card_view:showDivider="true" />
+                    <layout.DebugMenuItem android:id="@id/clearTapcode" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:description="Clear tapcode" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

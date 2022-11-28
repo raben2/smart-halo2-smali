@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="*"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <RelativeLayout android:orientation="horizontal" android:background="@color/veryWhite" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/metricIcon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="10.0dip" android:src="@drawable/APKTOOL_DUMMY_f7" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/metric_description" android:paddingRight="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/metric_and_units" android:layout_toRightOf="@id/metricIcon" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/tracking_set_goal_text_size" android:textColor="@color/fitnessPink" android:id="@id/metricTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_time" />
+                <RelativeLayout android:id="@id/goalTracked" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/metricTitle">
+                    <TextView android:textColor="@color/grayText" android:id="@id/goalTrackedText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tracking_goal_tracked" />
+                    <ImageView android:padding="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_f9" android:layout_toEndOf="@id/goalTrackedText" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/metric_and_units" android:padding="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="30.0sp" android:textColor="#ff595757" android:id="@id/metricData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:text="00:00:00" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffb9babc" android:id="@id/metricUnits" android:layout_width="35.0dip" android:layout_height="25.0dip" android:layout_toRightOf="@id/metricData" android:layout_alignBaseline="@id/metricData" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>

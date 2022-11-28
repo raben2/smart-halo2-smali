@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/veryBlack" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/veryBlack" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <ImageView android:id="@id/smarthalo_thinking" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/APKTOOL_DUMMY_262" />
+            <ImageView android:id="@id/smarthalo_icon" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/images_little_smarthalo" />
+            <ImageView android:id="@id/smarthalo_error" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/APKTOOL_DUMMY_24c" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center|top" android:id="@id/bubble_triangle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/APKTOOL_DUMMY_273" />
+        <FrameLayout android:id="@id/bubble_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/layout_pager_container" android:background="@color/veryWhite" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:id="@id/transition_animator" android:background="@drawable/onboarding_bubble_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="start|bottom|center" android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" />
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/next_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginEnd="16.0dip" />
+            </FrameLayout>
+            <ImageView android:id="@id/bubble_animator" android:background="@drawable/onboarding_bubble_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/close_button_layer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/close_button" android:padding="5.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="11.0dip" android:src="@drawable/onboarding_close_button" />
+    </FrameLayout>
+</merge>

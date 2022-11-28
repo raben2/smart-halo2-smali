@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/InstabugBaseContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/instabug_lyt_toolbar" />
+    <com.instabug.library.annotation.AnnotationLayout android:id="@id/annotationLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/InstabugAnnotationContainer" />
+</LinearLayout>

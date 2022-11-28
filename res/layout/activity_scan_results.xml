@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/bluetooth_disabled_container" android:background="@color/pairingBackground" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/bluetooth_disabled" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+            <TextView android:id="@id/bluetoothErroMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetoothNotEnabled" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/no_devices_container" android:background="@color/veryWhite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_marginTop="@dimen/large_padding">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/noDeviceInRange" />
+    </FrameLayout>
+    <ListView android:id="@id/device_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" />
+</LinearLayout>

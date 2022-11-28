@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/step_preview_container" android:background="@drawable/ibg_bug_vus_thumbnail_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instabug.bug.view.CorneredImageView android:id="@id/step_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/instabug_container_padding" android:adjustViewBounds="true" app:ib_bug_cornerRadius="@dimen/ib_core_padding_xsmall" app:ib_bug_roundedCorners="all" />
+    <ProgressBar android:id="@id/step_preview_prgressbar" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

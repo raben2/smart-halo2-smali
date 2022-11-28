@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/goal_panel" android:background="@drawable/APKTOOL_DUMMY_235" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/goalFlag" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/APKTOOL_DUMMY_ae" android:scaleType="centerInside" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/goal_text_frame" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/fitnessPink" android:id="@id/viewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tracking_goal_title" android:fontFamily="sans-serif" />
+        <TextView android:textSize="24.0sp" android:id="@id/goalStatusDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tracking_goal_not_set" android:maxLines="2" android:layout_below="@id/viewTitle" android:fontFamily="sans-serif" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/progressBarLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" style="@style/roundButtonStyle">
+        <ProgressBar android:id="@id/progressBar" android:layout_width="65.0dip" android:layout_height="65.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/circular_progressbar" style="?android:progressBarStyleHorizontal" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/goal_progress_text_size" android:textColor="@color/fitnessPink" android:id="@id/txtProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerHorizontal="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" android:layout_below="@id/txtProgress" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="end|center" android:id="@id/goalButtonLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+        <ImageButton android:id="@id/goalButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_236" />
+        <TextView android:textColor="@color/fitnessPink" android:id="@id/goalButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tracking_goal_set" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:textAlignment="center" />
+    </RelativeLayout>
+</LinearLayout>

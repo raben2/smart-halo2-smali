@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.Settings" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay">
+                <RelativeLayout android:layout_gravity="end" android:id="@id/checkmark_wrapper" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textColor="@color/veryWhite" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_save" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/pairingBackground" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/LoginInputLayout">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/grayText" android:id="@id/first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hintFirstName" android:importantForAutofill="noExcludeDescendants" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" app:hintTextAppearance="@style/LoginInputLayout">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/grayText" android:id="@id/last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="lalala" android:hint="@string/hintLastName" android:importantForAutofill="noExcludeDescendants" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" app:hintTextAppearance="@style/LoginInputLayout">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/grayText" android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hintEmail" android:inputType="textEmailAddress" android:importantForAutofill="noExcludeDescendants" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:id="@id/dateOfBirthContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" app:hintTextAppearance="@style/LoginInputLayout">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/grayText" android:id="@id/dateOfBirth" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hintDateOfBirth" android:editable="false" android:inputType="none" android:importantForAutofill="noExcludeDescendants" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <TextView android:textSize="@dimen/hint_text_size" android:textColor="@color/lightGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/hintSelectSex" />
+            <androidx.appcompat.widget.AppCompatSpinner android:id="@id/gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" />
+            <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/height_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/height_radio_group" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                <TextView android:textSize="@dimen/hint_text_size" android:textColor="@color/lightGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/hintHeight" />
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@id/metric_height_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" />
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@id/imperial_height_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" />
+                <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <RadioGroup android:gravity="bottom" android:orientation="horizontal" android:id="@id/height_radio_group" android:layout_width="@dimen/min_width_radio" android:layout_height="wrap_content" android:layout_alignBottom="@id/height_layout" android:layout_alignParentRight="true">
+                <RadioButton android:id="@id/metric_height_radio" android:layout_width="@dimen/half_min_width_radio" android:layout_height="wrap_content" android:text="@string/labelCm" android:onClick="onClickHeightRadioButton" />
+                <RadioButton android:id="@id/imperial_height_radio" android:layout_width="@dimen/half_min_width_radio" android:layout_height="wrap_content" android:text="@string/labelFtIn" android:onClick="onClickHeightRadioButton" />
+            </RadioGroup>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/weight_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/weight_radio_group" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                <TextView android:textSize="@dimen/hint_text_size" android:textColor="@color/lightGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/hintWeight" />
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@id/metric_weight_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" />
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@id/imperial_weight_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" />
+                <View android:background="@color/lightGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/weight_radio_group" android:layout_width="@dimen/min_width_radio" android:layout_height="wrap_content" android:layout_alignBottom="@id/weight_layout" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <RadioButton android:id="@id/metric_weight_radio" android:layout_width="@dimen/half_min_width_radio" android:layout_height="wrap_content" android:text="@string/labelKg" android:onClick="onClickWeightRadioButton" />
+                <RadioButton android:id="@id/imperial_weight_radio" android:layout_width="@dimen/half_min_width_radio" android:layout_height="wrap_content" android:text="@string/labelLbs" android:onClick="onClickWeightRadioButton" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/header_item" android:background="@color/pairingBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/medium_padding" android:src="@drawable/APKTOOL_DUMMY_1cd" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/medium_padding" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:id="@id/header_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/medium_padding" android:layout_toEndOf="@id/header_icon" />
+        <View android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/device_item" android:background="@drawable/selector_list_item" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+        <TextView android:textSize="16.0sp" android:textColor="@color/grayText" android:id="@id/device_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/medium_padding" android:layout_alignParentStart="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/device_info" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@drawable/selector_device_info" android:scaleType="centerInside" android:layout_toLeftOf="@id/right_arrow_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/right_arrow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_221" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/medium_padding" android:layout_alignParentEnd="true" />
+        <View android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

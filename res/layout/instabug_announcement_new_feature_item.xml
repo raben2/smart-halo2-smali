@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/new_feature_item" android:paddingBottom="@dimen/instabug_container_padding" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/new_feature_img" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/instabug_container_padding" android:paddingRight="@dimen/instabug_container_padding" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/instabug_announcement_feature_title" android:textStyle="bold" android:textColor="?instabug_survey_mcq_text_color" android:gravity="start|center" android:id="@id/new_feature_title" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/instabug_announcement_feature_title" android:textColor="?instabug_survey_mcq_text_color" android:gravity="start|center" android:id="@id/new_feature_description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

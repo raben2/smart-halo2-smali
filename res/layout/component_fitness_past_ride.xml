@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/fitnessRidePink" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/veryWhite" android:id="@id/pastRideDate" android:paddingLeft="@dimen/medium_padding" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="June 10 2015" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/veryWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/column_one" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <RelativeLayout android:id="@id/timeLayout" android:layout_width="wrap_content" android:layout_height="36.0dip">
+                    <ImageView android:id="@id/timeIcon" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_f7" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/past_ride_info_text_size" android:id="@id/pastRideTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="00:00:00" android:layout_centerVertical="true" android:layout_toEndOf="@id/timeIcon" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/caloriesLayout" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_below="@id/timeLayout">
+                    <ImageView android:id="@id/caloriesIcon" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_ea" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/past_ride_info_text_size" android:id="@id/pastRideCalories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="214 cal" android:layout_centerVertical="true" android:layout_toEndOf="@id/caloriesIcon" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/speedLayout" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_below="@id/caloriesLayout">
+                    <ImageView android:id="@id/speedIcon" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_f6" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/past_ride_info_text_size" android:id="@id/pastRideSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21.3 km/hr" android:layout_centerVertical="true" android:layout_toEndOf="@id/speedIcon" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/column_one">
+                <RelativeLayout android:id="@id/distanceLayout" android:layout_width="wrap_content" android:layout_height="36.0dip">
+                    <ImageView android:id="@id/distanceIcon" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_ec" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/past_ride_info_text_size" android:id="@id/pastRideDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="27.4 km" android:layout_centerVertical="true" android:layout_toEndOf="@id/distanceIcon" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/fitnessCo2Layout" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_below="@id/distanceLayout">
+                    <ImageView android:id="@id/co2Icon" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_eb" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/past_ride_info_text_size" android:id="@id/pastRideCo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="100 grams" android:layout_centerVertical="true" android:layout_toEndOf="@id/co2Icon" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/numberRidesLayout" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_below="@id/fitnessCo2Layout">
+                    <ImageView android:id="@id/numberOfRidesIcon" android:layout_width="40.0dip" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerVertical="true" app:srcCompat="@drawable/number_ride_icon_vector" />
+                    <TextView android:textSize="@dimen/past_ride_info_text_size" android:id="@id/numberOfRides" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="0 ride" android:layout_centerVertical="true" android:layout_toEndOf="@id/numberOfRidesIcon" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/pastViewChevron" android:layout_width="10.0dip" android:layout_height="16.0dip" android:layout_marginRight="@dimen/margin_medium" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/black_chevron" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_list_array">
+        <item>Man</item>
+        <item>Woman</item>
+        <item>Trans*</item>
+        <item>Prefer not to disclose</item>
+    </string-array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/googleMapsMapsWrapper" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/tabLayoutWrapper" app:layout_constraintTop_toTopOf="parent">
+        <layout.mapAdapter.SHGoogleMapsMap android:id="@id/googleMapsMaps" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/tabLayoutWrapper" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/bottomSheet" android:background="@drawable/refresh_card_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_hideable="false" app:behavior_peekHeight="40.0dip" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+            <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/pullTab" android:layout_width="fill_parent" android:layout_height="40.0dip" app:layout_constraintTop_toTopOf="parent">
+                        <ImageView android:layout_gravity="center" android:layout_width="32.0dip" android:layout_height="6.0dip" android:src="@drawable/refresh_card_pull" />
+                    </FrameLayout>
+                    <FrameLayout android:id="@id/viewContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/pullTab" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include android:id="@id/tabLayoutWrapper" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/googleMapsMapsWrapper" layout="@layout/tab_layout_3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

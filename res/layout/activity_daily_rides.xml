@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_daily_rides_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/fitnessPink" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/fitnessPink" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/backButton" android:background="?selectableItemBackgroundBorderless" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?homeAsUpIndicator" />
+            <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/veryWhite" android:ellipsize="start" android:layout_gravity="center_vertical" android:id="@id/pageTitle" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:maxLines="2" android:layout_weight="1.0" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/selectionModeButtons" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:id="@id/deleteRides" android:background="?selectableItemBackgroundBorderless" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/APKTOOL_DUMMY_d5" android:scaleType="centerInside" />
+                <ImageButton android:layout_gravity="center" android:id="@id/uploadToStrava" android:background="?selectableItemBackgroundBorderless" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/APKTOOL_DUMMY_25c" android:scaleType="centerInside" />
+                <ImageButton android:layout_gravity="center" android:id="@id/detailsMenu" android:background="?selectableItemBackgroundBorderless" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="wrap_content" android:scaleType="centerInside" app:srcCompat="@drawable/item_details_white" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewModeButtons" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:id="@id/showSelectionMode" android:background="?selectableItemBackgroundBorderless" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/APKTOOL_DUMMY_f5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/dailyRidesList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

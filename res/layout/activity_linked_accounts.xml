@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_linked_accounts_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+    <FrameLayout android:background="@color/backgroundGray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linked_accounts_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/large_padding">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_accounts_partner_apps" android:layout_marginStart="@dimen/medium_padding" />
+            <View android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/small_padding" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/strava_item" android:background="@drawable/selector_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="@dimen/small_padding" android:layout_marginBottom="@dimen/small_padding" android:src="@drawable/APKTOOL_DUMMY_257" android:scaleType="centerInside" android:layout_marginStart="@dimen/medium_padding" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/veryDark" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_accounts_strava" android:textAlignment="viewStart" android:layout_marginStart="@dimen/medium_padding" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/grayText" android:layout_gravity="center_vertical" android:id="@id/strava_account_state" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/linked_accounts_not_connected" android:layout_weight="1.0" android:textAlignment="viewEnd" android:layout_marginStart="@dimen/medium_padding" />
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="13.0dip" android:scaleType="centerInside" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" app:srcCompat="@drawable/gray_chevron" />
+            </LinearLayout>
+            <View android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/connect_to_strava_description" android:background="@color/veryWhite" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medium_padding">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginTop="@dimen/large_padding" android:src="@drawable/APKTOOL_DUMMY_258" android:scaleType="centerInside" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding" android:text="@string/linked_accounts_connect_strava" android:textAlignment="center" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/veryDark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medium_padding" android:text="@string/linked_accounts_connect_strava_description_1" android:textAlignment="center" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/veryDark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding" android:text="@string/linked_accounts_connect_strava_description_2" android:textAlignment="center" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/connect_to_strava" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="26.0dip" android:layout_marginBottom="45.0dip" android:src="@drawable/APKTOOL_DUMMY_256" android:scaleType="centerInside" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

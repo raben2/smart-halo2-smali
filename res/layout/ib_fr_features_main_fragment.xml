@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tabsContainer" android:background="@color/ib_fr_colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+        <com.google.android.material.tabs.TabLayout android:theme="@style/IbFrAppTheme.NoActionBar" android:id="@id/tab_layout" android:background="?colorPrimary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:layout_weight="6.0" app:tabIndicatorColor="@color/ib_fr_color_dimmed_state" app:tabIndicatorHeight="2.0dip" app:tabMode="fixed" app:tabSelectedTextColor="@color/ib_fr_color_ordinary_state" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" app:tabTextColor="@color/ib_fr_color_dimmed_state" />
+        <include android:id="@id/sortingActionsLayoutRoot" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_weight="4.0" layout="@layout/ib_fr_sort_bar_layout" />
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:tag="layout/settings_switch_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/switchLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/leftButtonView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/leftIconLayout" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+                <ImageView android:id="@id/leftButtonIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_1d0" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/alarmOffWarning" android:visibility="invisible" android:layout_width="14.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginBottom="25.0dip" android:src="@null" android:scaleType="centerInside" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0sp" android:id="@id/leftButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/light_manual" android:layout_toRightOf="@id/leftIconLayout" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/rightButtonView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/rightIconLayout" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">> <ImageView android:id="@id/rightButtonIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_8e" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/alarmSetWarning" android:visibility="invisible" android:layout_width="14.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginBottom="25.0dip" android:src="@null" android:scaleType="centerInside" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0sp" android:id="@id/rightButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/light_auto" android:layout_toRightOf="@id/rightIconLayout" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

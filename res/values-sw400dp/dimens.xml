@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="survey_button_height">48.0dip</dimen>
+    <dimen name="survey_button_margin_top">10.0dip</dimen>
+    <dimen name="survey_button_text_size">16.0sp</dimen>
+    <dimen name="survey_nps_height">100.0dip</dimen>
+    <dimen name="survey_nps_likely_labels_size">13.0sp</dimen>
+    <dimen name="survey_nps_likely_top_margin">8.0dip</dimen>
+    <dimen name="survey_nps_selected_rect_size">36.0dip</dimen>
+    <dimen name="survey_nps_selection_text_size">26.0sp</dimen>
+    <dimen name="survey_nps_top_margin">0.0dip</dimen>
+    <dimen name="survey_rate_us_image_height">70.0dip</dimen>
+    <dimen name="survey_rate_us_subTitle_text_size">16.0sp</dimen>
+    <dimen name="survey_rate_us_title_text_size">25.0sp</dimen>
+    <dimen name="survey_welcome_subtitle_text_margin_top">16.0dip</dimen>
+    <dimen name="survey_welcome_title_text_size">18.0sp</dimen>
+</resources>

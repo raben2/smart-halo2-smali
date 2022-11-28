@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instabug.featuresrequest.ui.custom.IbFrRippleView android:gravity="center" android:orientation="horizontal" android:id="@id/ib_feature_request_toolbar_vote_action_layout" android:background="@drawable/ibg_fr_bg_vote_toolbar" android:padding="@dimen/ib_fr_space_8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ib_fr_space_8" android:layout_marginTop="@dimen/ib_fr_space_8" android:layout_marginRight="@dimen/ib_fr_space_16" android:layout_marginBottom="@dimen/ib_fr_space_8" app:ib_fr_rv_centered="true" app:ib_fr_rv_type="rectangle" app:ib_fr_rv_zoom="true">
+        <ImageView android:id="@id/ib_toolbar_vote_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" app:srcCompat="@drawable/ibg_fr_ic_vote_arrow_white" />
+        <TextView android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/ib_toolbar_vote_count" android:layout_marginLeft="@dimen/ib_fr_space_4" android:layout_marginRight="@dimen/ib_fr_space_4" android:lines="1" android:textAllCaps="false" style="@style/IbFrToolbarVoteButton"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </com.instabug.featuresrequest.ui.custom.IbFrRippleView>
+</LinearLayout>

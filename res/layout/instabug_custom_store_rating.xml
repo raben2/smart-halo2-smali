@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/instabug_survey_dialog_container" android:background="@color/instabug_dialog_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="?instabug_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/ib_core_dimen_16" android:layout_weight="1.0" layout="@layout/survey_question_textview" />
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/item_close_survey_button" />
+        </LinearLayout>
+        <include layout="@layout/ib_survey_custom_dialog_action_buttons" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginBottom="6.0dip" layout="@layout/instabug_lyt_pbi" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/fragment_assistant_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/veryWhite" android:paddingBottom="100.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textStyle="bold" android:textColor="@color/veryBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/sound_title" style="@style/settingSectionStyle" />
+            <layout.SettingsSwitch android:id="@id/assistantSoundsSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:contentColor="@color/veryWhite" app:leftIcon="@drawable/APKTOOL_DUMMY_8c" app:leftText="@string/sound_off" app:rightIcon="@drawable/APKTOOL_DUMMY_8d" app:rightText="@string/sound_on" app:thumbColor="@color/assistantBlue" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/margin_title" android:paddingRight="@dimen/margin_title" android:layout_width="fill_parent" android:layout_height="51.0dip">
+                <ImageView android:id="@id/brightnessLow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_8b" />
+                <android.widget.SeekBar android:layout_gravity="center" android:id="@id/assistantVolume" android:layout_width="0.0dip" android:layout_height="wrap_content" android:progress="50" android:thumb="@drawable/APKTOOL_DUMMY_23f" android:layout_weight="1.0" />
+                <ImageView android:id="@id/brightnessHigh" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_8a" />
+            </LinearLayout>
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:id="@id/touch_input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:layout_marginTop="25.0dip" android:text="@string/assistant_touch_input_header" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/assistantTextGray" android:ellipsize="none" android:id="@id/touch_input_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:text="@string/assistant_touch_input_description" android:maxLines="2" />
+            <RelativeLayout android:id="@id/touch_input_page_button" android:background="@drawable/selector_list_item" android:paddingLeft="@dimen/margin_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/veryBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:text="@string/assistant_touch_input_button" android:layout_alignParentLeft="true" android:textAlignment="viewStart" />
+                <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginRight="@dimen/margin_medium" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/gray_chevron" />
+                <ImageView android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:id="@id/assistant_settings_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:layout_marginTop="25.0dip" android:text="@string/assistant_page_notifications_title" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/assistantTextGray" android:ellipsize="none" android:id="@id/assistant_settings_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:text="@string/assistant_page_notifications_description" android:maxLines="2" />
+            <RelativeLayout android:id="@id/assistant_notifications_page_button" android:background="@drawable/selector_list_item" android:paddingLeft="@dimen/margin_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/veryBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:text="@string/assistant_page_notifications_button" android:layout_alignParentLeft="true" android:textAlignment="viewStart" />
+                <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginRight="@dimen/margin_medium" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/gray_chevron" />
+                <ImageView android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <layout.statusBar.StatusBarLayout android:theme="@style/assistantHelpCardTheme" android:gravity="bottom" android:id="@id/assistantStatusBar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:helpCardDescriptionText="@string/assistant_help_card_description" app:helpCardTitleText="@string/assistant_help_card_title" app:offIcon="@drawable/APKTOOL_DUMMY_7e" app:offText="@string/calls_off" app:onIcon="@drawable/APKTOOL_DUMMY_7f" app:onText="@string/calls_on" app:themeColor="@color/assistantBlue" app:titleText="@string/assistant_status_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/assistant_help_card_call_notification" app:headerThemeColor="@color/assistantBlue" style="@style/helpCardItemHeader" />
+            <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/call_cp" style="@style/helpCardVideo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/assistant_help_card_sms_notification" app:headerThemeColor="@color/assistantBlue" style="@style/helpCardItemHeader" />
+            <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/text_cp" style="@style/helpCardVideo" />
+        </LinearLayout>
+    </layout.statusBar.StatusBarLayout>
+</FrameLayout>

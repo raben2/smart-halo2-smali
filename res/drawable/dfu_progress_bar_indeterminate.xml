@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="125">
+        <bitmap android:gravity="fill" android:src="@drawable/APKTOOL_DUMMY_215" android:tileModeX="disabled" />
+    </item>
+    <item android:duration="125">
+        <bitmap android:gravity="fill" android:src="@drawable/APKTOOL_DUMMY_216" android:tileModeX="disabled" />
+    </item>
+    <item android:duration="125">
+        <bitmap android:gravity="fill" android:src="@drawable/APKTOOL_DUMMY_217" android:tileModeX="disabled" />
+    </item>
+    <item android:duration="125">
+        <bitmap android:gravity="fill" android:src="@drawable/APKTOOL_DUMMY_218" android:tileModeX="disabled" />
+    </item>
+</animation-list>

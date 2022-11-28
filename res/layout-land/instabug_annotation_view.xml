@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" style="@style/InstabugBaseContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/instabug_annotation_image_container" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider">
+        <FrameLayout android:layout_gravity="center" android:id="@id/instabug_annotation_image_border" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.instabug.library.annotation.AnnotationView android:id="@id/instabug_annotation_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.instabug.library.annotation.ColorPickerPopUpView android:id="@id/instabug_color_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:layout_above="@id/instabug_annotation_actions_container" app:view_orientation="horizontal" />
+    <View android:id="@id/divider" android:background="?instabug_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/instabug_annotation_actions_container" />
+    <com.instabug.library.annotation.ShapeSuggestionsLayout android:id="@id/shapeSuggestionsLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_above="@id/divider" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/instabug_annotation_actions_container" android:background="?instabug_primary_color" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:weightSum="4.0" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layoutDirection="ltr" android:layout_alignParentStart="true">
+        <RelativeLayout android:id="@id/icon_brush_layout" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:textSize="26.0sp" android:textColor="?instabug_theme_tinting_color" android:gravity="center" android:layout_gravity="center" android:id="@id/icon_brush" android:padding="0.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ibg_core_ic_annotation_brush" />
+            <View android:id="@id/brush_indicator" android:background="@color/instabug_annotation_color_red" android:layout_width="22.0dip" android:layout_height="2.0dip" android:layout_below="@id/icon_brush" android:layout_alignLeft="@id/icon_brush" />
+        </RelativeLayout>
+        <ImageView android:textSize="26.0sp" android:textColor="?instabug_theme_tinting_color" android:gravity="center" android:id="@id/icon_magnify" android:padding="11.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:srcCompat="@drawable/ibg_core_ic_annotation_zoom" />
+        <ImageView android:textSize="26.0sp" android:textColor="?instabug_theme_tinting_color" android:gravity="center" android:id="@id/icon_blur" android:padding="11.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:srcCompat="@drawable/ibg_core_ic_annotation_blur" />
+        <ImageView android:textSize="26.0sp" android:textColor="?instabug_theme_tinting_color" android:gravity="center" android:id="@id/icon_undo" android:padding="11.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:srcCompat="@drawable/ibg_core_ic_annotation_undo" />
+    </LinearLayout>
+</RelativeLayout>

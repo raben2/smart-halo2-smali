@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/statusBarBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/double_item_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/top_status_bar" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:weightSum="1.0">
+        <layout.ConnectionStatusLayout android:id="@id/connected_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" app:shouldDisplayNotification="false" />
+        <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:textColor="#ffffffff" android:id="@id/device_name_display_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/connected_icon" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/lightGray" android:id="@id/firmware_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/device_name_display_text" android:layout_centerVertical="true" android:layout_marginStart="2.0dip" android:layout_toEndOf="@id/connected_icon" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/lightGray" android:id="@id/bootloader_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/device_name_display_text" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_tiny" android:layout_toEndOf="@id/firmware_version" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:src="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/navigationNotificationState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/APKTOOL_DUMMY_1e1" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/lightNotificationState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_1cb" android:layout_centerInParent="true" android:layout_marginStart="@dimen/margin_tiny" android:layout_marginEnd="@dimen/margin_tiny" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/alarmNotificationState" android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_65" android:scaleType="centerInside" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/trackingNotificationState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_272" android:layout_centerInParent="true" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/assistantNotificationState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_a2" android:layout_centerInParent="true" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_253" />
+            <RelativeLayout android:id="@id/batteryContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/batteryShell" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_93" android:scaleType="centerInside" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/batteryFill" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@color/veryWhite" android:id="@id/batteryPercentage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="57%" android:layout_centerInParent="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/veryWhite" android:id="@id/shTemp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10C" android:layout_below="@id/batteryPercentage" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

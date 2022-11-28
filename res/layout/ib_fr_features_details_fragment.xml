@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?instabug_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:layout_above="@id/separator" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/ib_fr_feature_request_details_header" />
+            <include layout="@layout/ib_fr_layout_comment_count" />
+            <include layout="@layout/ib_fr_layout_no_comments" />
+            <ListView android:id="@id/instabug_feature_details_comments_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ib_fr_space_16" android:listSelector="@android:color/transparent" android:divider="@null" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/addCommentLayoutContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/separator" android:background="@drawable/ibg_fr_gradient_shadow" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="-15.0dip" />
+        <TextView android:textColor="?ib_fr_details_add_feature_tv_color" android:gravity="center_vertical" android:id="@id/tv_add_comment" android:background="?instabug_background_color" android:paddingLeft="@dimen/ib_fr_details_title_padding_left_right" android:paddingRight="@dimen/ib_fr_details_title_padding_left_right" android:layout_width="fill_parent" android:layout_height="@dimen/ib_fr_add_comment_height" android:text="@string/add_feature" />
+    </LinearLayout>
+</LinearLayout>

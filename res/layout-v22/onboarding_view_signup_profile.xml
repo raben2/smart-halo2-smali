@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|top" android:orientation="vertical" android:background="@color/veryWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statusBar" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    <TextView android:theme="@style/onboardingHeader" android:id="@id/header" android:paddingTop="@dimen/onboarding_header_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onboarding_signup_profile_header" android:layout_below="@id/statusBar" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/confirmationButton" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:theme="@style/onboardingDescription" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/onboarding_signup_profile_description" />
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:id="@id/firstNameInputLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="23.0dip" app:hintTextAppearance="@style/LoginInputLayout">
+                <com.google.android.material.textfield.TextInputEditText android:textColor="@color/veryBlack" android:layout_gravity="center|top" android:id="@id/firstNameEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/onboarding_signup_profile_first_name" android:inputType="textCapWords" android:importantForAutofill="noExcludeDescendants" style="@style/onboardingEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:id="@id/lastNameInputLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="23.0dip" app:hintTextAppearance="@style/LoginInputLayout">
+                <com.google.android.material.textfield.TextInputEditText android:layout_gravity="center|top" android:id="@id/lastNameEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/onboarding_signup_profile_last_name" android:inputType="textCapWords" style="@style/onboardingEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:id="@id/birthdateInputLayout" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/LoginInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText android:layout_gravity="center|top" android:id="@id/birthdateEditText" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/onboarding_signup_profile_birthdate" android:inputType="textNoSuggestions" style="@style/onboardingEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/lightGray" android:layout_gravity="bottom|center|left" android:id="@id/birthdateError" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="@string/onboarding_signup_profile_birthdate_error" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginTextInputs" android:id="@id/emailInputLayout" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/LoginInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText android:layout_gravity="center|top" android:id="@id/emailEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/onboarding_signup_profile_email" android:inputType="textEmailAddress|textNoSuggestions" style="@style/onboardingEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/redText" android:layout_gravity="bottom|center|left" android:id="@id/emailError" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/AppTheme.LoginPasswords" android:id="@id/passwordInputLayout" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="16.0dip" app:hintTextAppearance="@style/LoginInputLayout" app:passwordToggleEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText android:layout_gravity="center|top" android:id="@id/passwordEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/onboarding_signup_profile_password" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/onboardingEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/lightGray" android:layout_gravity="bottom|center|left" android:id="@id/passwordError" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="@string/onboarding_form_password_error" />
+            </FrameLayout>
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/spacerTop" android:background="@drawable/gradient_white_to_gray" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_below="@id/header" android:layout_alignTop="@id/scrollView" />
+    <ImageView android:id="@id/spacerBottom" android:background="@drawable/gradient_gray_to_white" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignBottom="@id/scrollView" />
+    <layout.customControls.ConfirmButton android:id="@id/confirmationButton" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="55.0dip" android:layout_alignParentBottom="true" app:text="@string/onboarding_signup_profile_next" style="@style/onboardingGreenButton" />
+</RelativeLayout>

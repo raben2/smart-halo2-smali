@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/InstabugBaseContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/instabug_toolbar" layout="@layout/instabug_lyt_toolbar" />
+    <ViewStub android:id="@id/instabug_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

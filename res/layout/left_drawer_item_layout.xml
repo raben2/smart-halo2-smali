@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+        <FrameLayout android:id="@id/image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin">
+            <ImageView android:layout_gravity="center" android:id="@id/image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+            <View android:background="@drawable/APKTOOL_DUMMY_e4" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+        </FrameLayout>
+        <TextView android:textColor="@color/veryWhite" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/image_container" />
+    </RelativeLayout>
+</merge>

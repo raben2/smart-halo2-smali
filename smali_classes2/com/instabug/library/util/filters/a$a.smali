@@ -1,0 +1,80 @@
+.class final Lcom/instabug/library/util/filters/a$a;
+.super Ljava/lang/Object;
+.source "AttributeFiltersFunctions.java"
+
+# interfaces
+.implements Lcom/instabug/library/util/filters/Filter;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/instabug/library/util/filters/a;->e()Lcom/instabug/library/util/filters/Filter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/instabug/library/util/filters/Filter<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "ERADICATE_RETURN_NOT_NULLABLE"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lcom/instabug/library/internal/storage/cache/db/userAttribute/UserAttributeCacheManager;->getType(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    const/4 p1, 0x0
+
+    :cond_0
+    return-object p1
+.end method
+
+.method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "ERADICATE_RETURN_NOT_NULLABLE"
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Ljava/lang/String;
+
+    invoke-virtual {p0, p1}, Lcom/instabug/library/util/filters/a$a;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method

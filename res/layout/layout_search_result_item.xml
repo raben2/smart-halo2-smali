@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/image_view_wrapper" android:layout_width="50.0dip" android:layout_height="@dimen/item_height">
+        <ImageView android:id="@id/image_view" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/activity_horizontal_margin" android:paddingEnd="@dimen/activity_horizontal_margin" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/item_height" android:layout_toEndOf="@id/image_view_wrapper">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textStyle="bold" android:textColor="@color/lightGray" android:ellipsize="end" android:id="@id/display_text" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/lightGray" android:ellipsize="end" android:id="@id/sub_display_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/display_text" />
+        </RelativeLayout>
+        <View android:background="@color/infoGray" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>

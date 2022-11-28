@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/header_item_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerInside" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:layout_gravity="center|left" android:id="@id/header_item_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/folding_icon" android:layout_width="20.0dip" android:layout_height="wrap_content" android:src="@drawable/debug_item_expand" android:scaleType="centerInside" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/veryBlack" android:id="@id/pickerHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/hintSelectSex" />
+    <RadioGroup android:orientation="vertical" android:id="@id/genderGroup" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip">
+        <RadioButton android:theme="@style/genderRadioButtons" android:id="@id/femaleRadioButton" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fitness_gender_female" />
+        <RadioButton android:theme="@style/genderRadioButtons" android:id="@id/maleRadioButton" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/fitness_gender_male" />
+        <RadioButton android:theme="@style/genderRadioButtons" android:id="@id/nonBinaryRadioButton" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/fitness_gender_non_binary" />
+        <RadioButton android:theme="@style/genderRadioButtons" android:id="@id/notDisclosedRadioButton" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/fitness_gender_prefer_not_to_disclose" />
+    </RadioGroup>
+</LinearLayout>

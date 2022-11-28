@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_alarm_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="97.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:text="@string/alarm_tapcode_title" style="@style/alarmTitleStyle" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/APKTOOL_DUMMY_260" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/tap1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_25d" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_261" />
+                    <ImageView android:id="@id/tap2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_25e" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_261" />
+                    <ImageView android:id="@id/tap3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_25d" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_261" />
+                    <ImageView android:id="@id/tap4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_25d" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_261" />
+                    <ImageView android:id="@id/tap5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_25e" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_261" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/change_tapcode" android:background="@color/infoGray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/alarmOrange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/alarm_tapcode_button" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/margin_tiny" android:src="@drawable/APKTOOL_DUMMY_25f" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:id="@id/alarmSeverityTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginBottom="@dimen/margin_small" android:text="@string/alarm_sensitivity_title" style="@style/alarmTitleStyle" />
+            <layout.SettingsSwitch android:id="@id/severitySwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:contentColor="@color/veryWhite" app:leftIcon="@drawable/APKTOOL_DUMMY_61" app:leftText="@string/alarm_sensitivity_lenient" app:rightIcon="@drawable/APKTOOL_DUMMY_60" app:rightText="@string/alarm_sensitivity_vigilant" app:thumbColor="@color/alarmOrange" />
+            <TextView android:id="@id/recapTile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginBottom="5.0dip" android:text="@string/alarm_recap_title" style="@style/alarmTitleStyle" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/settingsTextNotSelected" android:id="@id/recapDescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:layout_marginBottom="@dimen/margin_medium" />
+        </LinearLayout>
+    </ScrollView>
+    <layout.statusBar.StatusBarLayout android:theme="@style/alarmHelpCardTheme" android:layout_gravity="bottom" android:id="@id/alarmStatusBar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:helpCardDescriptionText="@string/alarm_help_card_description" app:helpCardTitleText="@string/alarm_help_card_title" app:offIcon="@drawable/alarm_off_shape" app:offText="@string/alarm_activation_off" app:onIcon="@drawable/alarm_on_shape" app:onText="@string/alarm_activation_on" app:themeColor="@color/alarmOrange" app:titleText="@string/alarm_activation_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/alarm_help_card_auto_activiation" app:headerThemeColor="@color/alarmOrange" style="@style/helpCardItemHeader" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/helpCardTextColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margin_medium" android:text="@string/alarm_help_card_auto_activiation_description" />
+            <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/alarm_cp" style="@style/helpCardVideo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/alarm_help_card_manual_activiation" app:headerThemeColor="@color/alarmOrange" style="@style/helpCardItemHeader" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/helpCardTextColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margin_medium" android:text="@string/alarm_help_card_manual_activiation_description" />
+            <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/alarm_lock_cp" style="@style/helpCardVideo" />
+        </LinearLayout>
+    </layout.statusBar.StatusBarLayout>
+</FrameLayout>

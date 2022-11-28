@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="right" android:id="@id/instabug_video_attachment" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/instabug_img_video_attachment" android:background="@drawable/ibg_core_chat_bubble_sent" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/APKTOOL_DUMMY_16d" android:adjustViewBounds="true" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="94.0dip" android:layout_height="fill_parent" android:layout_marginRight="6.0dip">
+            <ProgressBar android:layout_gravity="center" android:id="@id/instabug_video_attachment_progress_bar" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+            <ImageView android:layout_gravity="center" android:id="@id/instabug_btn_play_video" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_161" android:tint="?instabug_foreground_color" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/instabug_date_text_size" android:textColor="#ff999999" android:gravity="right" android:layout_gravity="right" android:id="@id/instabug_txt_message_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

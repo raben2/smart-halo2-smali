@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="4.0dip" android:color="@color/veryBlack" />
+            <size android:height="32.0dip" android:width="32.0dip" />
+        </shape>
+    </item>
+    <item android:left="10.0dip" android:top="16.0dip" android:right="10.0dip" android:bottom="16.0dip">
+        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_e6" android:tint="@color/veryBlack" />
+    </item>
+</layer-list>

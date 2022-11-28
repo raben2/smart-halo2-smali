@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/veryBlack" />
+            <size android:height="32.0dip" android:width="32.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="2.0dip" android:color="@color/veryBlack" />
+            <size android:height="32.0dip" android:width="32.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke android:width="4.0dip" android:color="@color/veryWhite" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_c5" android:tint="@color/redText" />
+            </item>
+            <item>
+                <rotate android:fromDegrees="90.0">
+                    <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_c5" android:tint="@color/redText" />
+                </rotate>
+            </item>
+            <item>
+                <rotate android:fromDegrees="180.0">
+                    <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_c5" android:tint="@color/redText" />
+                </rotate>
+            </item>
+            <item>
+                <rotate android:fromDegrees="270.0">
+                    <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_c5" android:tint="@color/navigationGreen" />
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>

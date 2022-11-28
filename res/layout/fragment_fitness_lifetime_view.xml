@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_fitness_lifetime_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lifetime_layout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/fitnessPink" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/timeIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_f7" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_alignParentStart="true" />
+            <TextView android:textColor="@color/veryWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_time" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/timeIcon" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_total_time" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/totalTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_total_trips" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/totalTrips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 trips" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_avg_trip_time" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/avgTripTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_longest_trip" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/longestTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/fitnessPink" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:textSize="@dimen/lifetime_text_size" android:id="@id/distanceIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_ec" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_alignParentStart="true" />
+            <TextView android:textColor="@color/veryWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_distance" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/distanceIcon" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_total_distance" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/totalDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 km" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_longest_distance" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/longestDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 km" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_avg_trip_distance" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/avgTripDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 km" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/fitnessPink" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/speedIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_f6" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_alignParentStart="true" />
+            <TextView android:textColor="@color/veryWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_speed" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/speedIcon" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_avg_speed" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/avgSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 km/h" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/tiny_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_max_speed" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/maxSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 km/h" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/fitnessPink" android:padding="@dimen/small_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/elevationIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_ed" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_alignParentStart="true" />
+            <TextView android:textColor="@color/veryWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_elevation" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/elevationIcon" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_total_climb" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/totalClimb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 km" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/tiny_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_avg_climb" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/avgClimb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 m" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_highest_climb" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/highestClimb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 m" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/small_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/fitnessPink" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/caloriesIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_ea" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_alignParentStart="true" />
+            <TextView android:textColor="@color/veryWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_calories" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/caloriesIcon" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_total_calories" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/totalCalories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 calories" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_avg_calories" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/avgCalories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 calories" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:padding="@dimen/tiny_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_highest_calories" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/highestCalories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 calories" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/fitnessPink" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/co2Icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_eb" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_alignParentStart="true" />
+            <TextView android:textColor="@color/veryWhite" android:id="@id/coHeadingText" android:paddingTop="@dimen/tiny_padding" android:paddingBottom="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_co2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/co2Icon" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:id="@id/totalCO2Title" android:paddingTop="@dimen/tiny_padding" android:paddingBottom="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_total_co2" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/totalCo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 grams" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:id="@id/averageCOTitle" android:paddingTop="@dimen/tiny_padding" android:paddingBottom="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_avg_co2" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/avgCo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 grams" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/infoGray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lifetime_text_size" android:id="@id/highestCoTitle" android:paddingTop="@dimen/tiny_padding" android:paddingBottom="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime_highest_co2" android:layout_marginStart="@dimen/margin_medium" />
+            <TextView android:textSize="@dimen/lifetime_text_size" android:textColor="@color/fitnessPink" android:id="@id/highestCo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 grams" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

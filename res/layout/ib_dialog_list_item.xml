@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/instabug_prompt_option_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" style="@style/InstabugDialogItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/instabug_prompt_option_icon" android:padding="0.0dip" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="@dimen/ib_core_margin_top_prompt_option_icon" android:layout_marginRight="@dimen/ib_core_margin_right_prompt_option_icon_default" android:layout_marginBottom="0.0dip" android:tint="?instabug_theme_tinting_color" android:layout_marginEnd="@dimen/ib_core_margin_right_prompt_option_icon_default" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/instabug_prompt_option_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/InstabugDialogItemText" />
+        <TextView android:id="@id/instabug_prompt_option_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/InstabugDialogItemDescription" />
+    </LinearLayout>
+</LinearLayout>

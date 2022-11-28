@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/fitnessPink" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/set_goal_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/goal_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/APKTOOL_DUMMY_23c" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <TextView android:textColor="@color/fitnessPink" android:id="@id/set_goal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:text="@string/tracking_set_time_goal" android:layout_alignTop="@id/goal_icon" android:layout_toEndOf="@id/goal_icon" />
+        <EditText android:textSize="40.0sp" android:textColor="@color/veryBlack" android:id="@id/goal_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="0" android:layout_centerHorizontal="true" android:inputType="number" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_23a" android:layout_below="@id/goal_value" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/set_goal_units" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/tracking_set_time_units" android:layout_below="@id/goal_value" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/goalButtonLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_below="@id/goal_value" android:layout_centerHorizontal="true">
+            <ImageButton android:id="@id/set_goal_value_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_238" />
+            <TextView android:textColor="@color/fitnessPink" android:id="@id/set_goal_value_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tracking_set_goal_value_text" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:textAlignment="center" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

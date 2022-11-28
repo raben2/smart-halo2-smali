@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/instabug_survey_dialog_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/instabug_ic_survey_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginBottom="8.0dip" android:textAlignment="center" android:layout_marginStart="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/instabug_dialog_survey_container" android:background="?survey_container_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ProgressBar android:id="@id/survey_step_progressbar" android:layout_width="fill_parent" android:layout_height="4.0dip" android:progressDrawable="@drawable/ibg_survey_step_progressbar" style="?android:progressBarStyleHorizontal" />
+        <com.instabug.library.ui.custom.InstabugViewPager android:id="@id/instabug_survey_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/survey_button_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/instabug_btn_submit" android:background="@drawable/ibg_survey_large_action_button" android:layout_width="fill_parent" android:layout_height="@dimen/survey_button_height" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginTop="@dimen/survey_button_margin_top" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:layout_marginBottom="8.0dip" android:text="@string/instabug_str_action_submit" android:textAllCaps="true" />
+        <include android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="-8.0dip" android:layout_marginBottom="4.0dip" layout="@layout/instabug_lyt_pbi" />
+    </LinearLayout>
+</LinearLayout>

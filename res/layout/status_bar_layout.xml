@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/statusBarRoot" android:tag="layout/status_bar_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gray_inner_overlay" android:background="@color/helpCardOverlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/helpCard" android:background="@color/veryWhite" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/statusBarContainer">
+        <ImageView android:id="@id/helpCardBorder" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentTop="true" />
+        <FrameLayout android:layout_gravity="top" android:id="@id/helpCardButton" android:paddingLeft="@dimen/margin_medium" android:paddingRight="@dimen/margin_tiny" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/helpCardButtonBackground" android:layout_width="32.0dip" android:layout_height="24.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\?" style="@style/help_card_button_text" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/completedRideGray" android:id="@id/helpCardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/helpCardButton" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/helpCardTextColor" android:id="@id/helpCardDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_below="@id/helpCardButton" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/helpCardPager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/helpCardDots" android:layout_below="@id/helpCardDescription" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/helpCardDots" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" style="@style/helpCardPagerStyle" />
+        <ImageView android:id="@id/leftPagerArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/rightPagerArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/helpCardStatusButton" android:background="@android:color/transparent" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/statusBarContainer" android:layout_alignWithParentIfMissing="true" android:elevation="10.0dip">
+        <ImageView android:layout_gravity="bottom" android:id="@id/helpCardStatusButtonBackground" android:layout_width="32.0dip" android:layout_height="24.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\?" style="@style/help_card_button_text" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/statusBarContainer" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height" android:layout_alignParentBottom="true" android:elevation="15.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_251" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="22.0sp" android:textColor="@color/veryWhite" android:layout_gravity="center_vertical" android:id="@id/statusText" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/medium_padding" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+            <layout.statusBar.StatusBarSwitch android:layout_gravity="center_vertical" android:id="@id/statusSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/medium_padding" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

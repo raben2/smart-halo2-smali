@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/backgroundGray" android:layout_width="fill_parent" android:layout_height="@dimen/medium_padding" />
+    <LinearLayout android:orientation="vertical" android:id="@id/permissions_container" android:background="@color/veryWhite" android:paddingTop="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/assistantWarningColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:text="@string/assistant_notifications_no_permissions_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/assistantTextGray" android:ellipsize="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:text="@string/assistant_notifications_no_permissions_description" android:maxLines="2" />
+        <RelativeLayout android:id="@id/accept_permissions_button" android:background="@drawable/selector_button" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+            <ImageView android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/veryBlack" android:paddingLeft="@dimen/margin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_notifications_accept_permissions" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAlignment="viewStart" />
+            <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginRight="@dimen/margin_medium" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/gray_chevron" />
+        </RelativeLayout>
+        <View android:background="@color/backgroundGray" android:layout_width="fill_parent" android:layout_height="@dimen/medium_padding" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/veryWhite" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/assistantTextGray" android:padding="@dimen/medium_padding" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_notifications_header" />
+        <View android:background="@color/backgroundGray" android:layout_width="fill_parent" android:layout_height="@dimen/medium_padding" />
+    </LinearLayout>
+</LinearLayout>

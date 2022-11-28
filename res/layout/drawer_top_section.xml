@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/drawerTopBackground" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_top_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/drawer_top_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="John Doe" style="@style/leftDrawerTitleStyle" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/lightGray" android:layout_gravity="bottom|center" android:id="@id/appVersionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="App v0.1.11" android:layout_above="@id/drawer_top_title_text" android:layout_alignLeft="@id/drawer_top_title_text" />
+    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/veryWhite" android:id="@id/auth_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:layout_alignBottom="@id/drawer_top_title_text" android:layout_alignParentRight="true" />
+</RelativeLayout>

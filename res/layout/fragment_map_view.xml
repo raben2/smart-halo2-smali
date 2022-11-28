@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <layout.mapAdapter.SHGoogleMapsMap android:id="@id/mapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center|right|top" android:id="@id/alternate_routes_control" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:clickable="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <LinearLayout android:orientation="vertical" android:id="@id/map_controls_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <Button android:textColor="@color/navigationGreen" android:layout_gravity="bottom|center" android:id="@id/clear_button" android:background="@drawable/oval_button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/small_padding" android:minHeight="30.0dip" android:text="@string/clearNavRoute" android:paddingStart="@dimen/medium_padding" android:paddingEnd="@dimen/medium_padding" android:elegantTextHeight="false" />
+                <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/property" android:clickable="true" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:src="@drawable/APKTOOL_DUMMY_232" app:backgroundTint="@color/actionButtonGreen" style="@style/roundButtonStyle" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/find_bike" android:clickable="true" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" app:backgroundTint="@color/actionButtonGreen" app:srcCompat="@drawable/APKTOOL_DUMMY_e6" style="@style/roundButtonStyle" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/find_me" android:clickable="true" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" app:srcCompat="@drawable/APKTOOL_DUMMY_e7" style="@style/roundButtonStyle" />
+                </LinearLayout>
+                <layout.statusBar.StatusBarLayout android:theme="@style/mapHelpCardTheme" android:layout_gravity="bottom" android:id="@id/mapStatusBar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:helpCardDescriptionText="@string/map_help_card_description" app:helpCardTitleText="@string/map_help_card_title" app:themeColor="@color/navigationGreen">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                        <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/map_help_card_turn_by_turn" app:headerThemeColor="@color/navigationGreen" style="@style/helpCardItemHeader" />
+                        <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/nav_1_cp" style="@style/helpCardVideo" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                        <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/map_help_card_rerouting" app:headerThemeColor="@color/navigationGreen" style="@style/helpCardItemHeader" />
+                        <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/nav_2_cp" style="@style/helpCardVideo" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                        <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/map_help_card_caution" app:headerThemeColor="@color/navigationGreen" style="@style/helpCardItemHeader" />
+                        <layout.statusBar.HelpCardVideo android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/nav_3_cp" style="@style/helpCardVideo" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                        <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/map_help_card_quick_turns" app:headerThemeColor="@color/navigationGreen" style="@style/helpCardItemHeader" />
+                        <layout.statusBar.HelpCardVideo android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/quick_turns" style="@style/helpCardVideo" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                        <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/map_help_card_compass" app:headerThemeColor="@color/navigationGreen" style="@style/helpCardItemHeader" />
+                        <layout.statusBar.HelpCardVideo android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/compasswithintro" style="@style/helpCardVideo" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                        <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/map_help_card_roundabout" app:headerThemeColor="@color/navigationGreen" style="@style/helpCardItemHeader" />
+                        <layout.statusBar.HelpCardVideo android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/roundabout" style="@style/helpCardVideo" />
+                    </LinearLayout>
+                </layout.statusBar.StatusBarLayout>
+            </FrameLayout>
+            <include android:id="@id/bottom_drawer_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/direction_bottom_drawer" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/map_overlay" android:background="@color/overlayBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

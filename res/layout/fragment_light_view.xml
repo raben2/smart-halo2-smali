@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="97.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_title" android:layout_marginTop="@dimen/margin_title">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_23d" />
+            <TextView android:textColor="@color/veryBlack" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/light_section_title" style="@style/settingTitleStyle" />
+        </LinearLayout>
+        <TextView android:textColor="@color/veryBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/light_mode_title" style="@style/settingSectionStyle" />
+        <layout.SettingsSwitch android:id="@id/lightModeSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:contentColor="@color/veryBlack" app:leftIcon="@drawable/APKTOOL_DUMMY_1c5" app:leftText="@string/light_blinking" app:rightIcon="@drawable/APKTOOL_DUMMY_1c9" app:rightText="@string/light_normal" app:thumbColor="@color/lightYellow" />
+        <TextView android:textColor="@color/veryBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/light_brightness_title" style="@style/settingSectionStyle" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/infoGray" android:paddingLeft="@dimen/margin_title" android:paddingRight="@dimen/margin_title" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/brightnessLow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_97" />
+            <android.widget.SeekBar android:layout_gravity="center" android:id="@id/brightness" android:layout_width="0.0dip" android:layout_height="wrap_content" android:progress="50" android:thumb="@drawable/APKTOOL_DUMMY_23f" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/brightnessHigh" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_96" />
+        </LinearLayout>
+    </LinearLayout>
+    <layout.statusBar.StatusBarLayout android:theme="@style/lightHelpCardTheme" android:layout_gravity="bottom" android:id="@id/lightStatusBar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:helpCardDescriptionText="@string/light_help_card_description" app:helpCardTitleText="@string/light_help_card_title" app:offIcon="@drawable/APKTOOL_DUMMY_240" app:offText="@string/light_manual" app:onIcon="@drawable/APKTOOL_DUMMY_241" app:onText="@string/light_auto" app:themeColor="@color/lightYellow" app:titleText="@string/light_status_bar_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/light_help_card_turn_on_title" app:headerThemeColor="@color/lightYellow" style="@style/helpCardItemHeader" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margin_medium">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_107" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/helpCardTextColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/light_help_card_short_taps" android:textAlignment="center" />
+                </LinearLayout>
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/lightYellow" android:layout_gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/medium_padding" android:layout_marginRight="@dimen/medium_padding" android:text="@string/light_help_card_or" android:textAlignment="center" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_109" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/helpCardTextColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/light_help_card_turns_off_at_sunset" android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/medium_padding" android:layout_marginTop="@dimen/tiny_padding" android:layout_marginRight="@dimen/medium_padding" android:src="@drawable/APKTOOL_DUMMY_106" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/light_help_card_turn_off_title" app:headerThemeColor="@color/lightYellow" style="@style/helpCardItemHeader" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margin_medium">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_107" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/helpCardTextColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/light_help_card_short_taps" android:textAlignment="center" />
+                </LinearLayout>
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/lightYellow" android:layout_gravity="center|top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/light_help_card_or" android:layout_weight="1.0" android:textAlignment="center" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_108" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/helpCardTextColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/light_help_card_turns_on_at_sunrise" android:textAlignment="center" />
+                </LinearLayout>
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/lightYellow" android:layout_gravity="center|top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/light_help_card_or" android:layout_weight="1.0" android:textAlignment="center" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_102" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/helpCardTextColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/light_help_card_turns_off_disconnection" android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/medium_padding" android:layout_marginTop="@dimen/tiny_padding" android:layout_marginRight="@dimen/medium_padding" android:src="@drawable/APKTOOL_DUMMY_105" android:scaleType="centerInside" />
+        </LinearLayout>
+    </layout.statusBar.StatusBarLayout>
+</FrameLayout>

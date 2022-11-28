@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/veryBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/statusBar" android:background="@color/blackOpacity10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="71.0dip" android:layout_marginTop="170.0dip" android:src="@drawable/APKTOOL_DUMMY_24a" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/introCreateAccount" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/onboarding_login_create_account" android:layout_above="@id/introLogin" style="@style/onboardingGreenButton" />
+    <Button android:id="@id/introLogin" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="70.0dip" android:text="@string/login_button" android:layout_alignParentBottom="true" style="@style/onboardingWhiteButton" />
+</RelativeLayout>

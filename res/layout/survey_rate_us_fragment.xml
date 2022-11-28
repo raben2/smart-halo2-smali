@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/instabug_survey_dialog_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <include layout="@layout/layout_shadow" />
+        <RelativeLayout android:orientation="vertical" android:background="?survey_container_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/item_close_survey_button" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:layout_centerInParent="true">
+                <ImageView android:id="@id/instabug_img_thanks" android:background="@drawable/ibg_survey_ic_thanks_background" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/ibg_survey_ic_survey_thankyou" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/survey_rate_us_title_text_size" android:gravity="center" android:id="@id/txt_rate_us_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" android:layout_below="@id/instabug_img_thanks" android:layout_centerHorizontal="true" app:autoSizeMaxTextSize="@dimen/survey_rate_us_title_text_size" style="@style/InstabugResizableText" />
+                <TextView android:id="@id/txt_rate_us_question" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_rate_us_title" style="@style/InstabugSurveyThanksMessage" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

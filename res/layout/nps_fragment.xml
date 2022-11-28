@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.instabug.survey.ui.custom.NpsView android:background="?survey_nps_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:nps_count="11" />
+</LinearLayout>

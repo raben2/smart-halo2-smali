@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/destination_panel" android:background="@drawable/APKTOOL_DUMMY_251" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_medium">
+            <LinearLayout android:orientation="horizontal" android:id="@id/destinationLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/destination" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/navigationDestinationStyle" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/isSaved" android:background="@drawable/APKTOOL_DUMMY_e5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/destinationLayout">
+                <ImageView android:id="@id/distance_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_1e5" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/veryWhite" android:id="@id/total_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_tiny" android:layout_toEndOf="@id/distance_image" style="@style/navigationInfoStyle" />
+                <TextView android:id="@id/total_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/total_distance" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_tiny" android:layout_toEndOf="@id/total_distance" style="@style/navigationInfoStyle" />
+                <ImageView android:id="@id/time_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_1e7" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/total_distance_unit" />
+                <TextView android:id="@id/total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_tiny" android:layout_toEndOf="@id/time_image" style="@style/navigationInfoStyle" />
+                <ImageView android:id="@id/elevation_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_1e6" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_small" android:layout_toEndOf="@id/total_time" />
+                <TextView android:textColor="@color/veryWhite" android:id="@id/elevation_delta" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+58" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_tiny" android:layout_toEndOf="@id/elevation_image" style="@style/navigationInfoStyle" />
+                <TextView android:id="@id/elevation_delta_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m" android:layout_alignBaseline="@id/elevation_delta" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_tiny" android:layout_toEndOf="@id/elevation_delta" style="@style/navigationInfoStyle" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+            <ImageButton android:id="@id/favourites" android:background="@drawable/APKTOOL_DUMMY_5e" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="@dimen/margin_small" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+            <ImageButton android:id="@id/navigation_handler" android:background="@drawable/APKTOOL_DUMMY_100" android:src="@drawable/APKTOOL_DUMMY_250" android:text="@string/directions_go" android:layout_centerVertical="true" android:layout_toEndOf="@id/favourites" style="@style/roundButtonStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/direction_panel" android:background="@drawable/APKTOOL_DUMMY_251" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/current_direction_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/APKTOOL_DUMMY_1c3" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/instruction_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="3" android:scrollHorizontally="false" android:layout_weight="1.0" style="@style/instructionDescStyle" />
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+            <ImageButton android:id="@id/direction_cancel" android:background="@drawable/APKTOOL_DUMMY_21d" android:padding="@dimen/medium_padding" android:src="@drawable/APKTOOL_DUMMY_254" android:layout_centerInParent="true" style="@style/roundButtonStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

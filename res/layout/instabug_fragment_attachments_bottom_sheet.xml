@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/instabug_attachments_bottom_sheet_dim_view" android:background="@color/instabug_dialog_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/instabug_attachments_actions_bottom_sheet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/InstabugBottomSheetContainer">
+        <LinearLayout android:id="@id/instabug_attach_screenshot" style="@style/InstabugBottomSheetItemContainer">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/instabug_attach_screenshot_image_view" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" style="@style/InstabugBottomSheetItemImage" />
+            <TextView android:id="@id/instabug_attach_screenshot_text" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/instabug_str_take_screenshot" style="@style/InstabugBottomSheetItemText" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/instabug_attach_video" style="@style/InstabugBottomSheetItemContainer">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/instabug_attach_video_image_view" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" style="@style/InstabugBottomSheetItemImage" />
+            <TextView android:id="@id/instabug_attach_video_text" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/instabug_str_record_video" style="@style/InstabugBottomSheetItemText" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/instabug_attach_gallery_image" style="@style/InstabugBottomSheetItemContainer">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/instabug_attach_gallery_image_view" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" style="@style/InstabugBottomSheetItemImage" />
+            <TextView android:id="@id/instabug_attach_gallery_image_text" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/instabug_str_pick_media_from_gallery" style="@style/InstabugBottomSheetItemText" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@android:color/white" android:ellipsize="end" android:layout_margin="0.0dip" android:foreground="?android:selectableItemBackground" android:lines="1" android:layout_centerVertical="true" android:rotation="0.0" android:textAllCaps="true" style="@style/InstabugTopDialogButton"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

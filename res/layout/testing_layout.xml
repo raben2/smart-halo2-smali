@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ui1" android:layout_width="250.0dip" android:layout_height="wrap_content">
+        <TextView android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label1Of1" />
+        <TextView android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label2Of1" />
+        <TextView android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label3Of1" />
+        <TextView android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label4Of1" />
+        <TextView android:id="@id/textView4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label5Of1" />
+        <TextView android:id="@id/textView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label6Of1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ui2" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ui1" android:layout_toEndOf="@id/ui1">
+        <TextView android:id="@id/textView6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label1Of2" />
+        <TextView android:id="@id/textView7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label2Of2" />
+        <TextView android:id="@id/textView8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label3Of2" />
+        <TextView android:id="@id/textView9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label4Of2" />
+        <TextView android:id="@id/textView10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label5Of2" />
+        <TextView android:id="@id/textView11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label6Of2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ui5" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui6" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui5" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui7" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui6" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui8" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui7" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui9" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui8" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui10" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui9" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui11" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui10" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui12" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui11" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ui13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ui12">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui7" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/ui8" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label1Of5" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label2Of5" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label3Of5" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label4Of5" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label5Of5" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label6Of5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ui13">
+        <LinearLayout android:orientation="vertical" android:id="@id/ui3" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+            <TextView android:id="@id/textView12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label1Of3" />
+            <TextView android:id="@id/textView13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label2Of3" />
+            <TextView android:id="@id/textView14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label3Of3" />
+            <TextView android:id="@id/textView15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label4Of3" />
+            <TextView android:id="@id/textView16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label5Of3" />
+            <TextView android:id="@id/textView17" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label6Of3" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ui4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ui3" android:layout_toEndOf="@id/ui3">
+            <TextView android:id="@id/textView18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label1Of4" />
+            <TextView android:id="@id/textView19" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label2Of4" />
+            <TextView android:id="@id/textView20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label3Of4" />
+            <TextView android:id="@id/textView21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label4Of4" />
+            <TextView android:id="@id/textView22" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label5Of4" />
+            <TextView android:id="@id/textView23" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Label6Of4" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

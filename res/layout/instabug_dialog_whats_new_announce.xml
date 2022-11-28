@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:id="@id/instabug_announcement_dialog_container" android:background="?survey_container_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/instabug_announcement_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/InstabugAnnouncementTitle"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginTop="@dimen/instabug_dialog_container_padding" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:layout_below="@id/instabug_announcement_title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/instabug_announcement_features_grid_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/survey_button_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/instabug_btn_submit" android:background="@drawable/ibg_survey_large_action_button" android:layout_width="fill_parent" android:layout_height="@dimen/survey_button_height" android:layout_marginTop="@dimen/survey_button_margin_top" android:layout_marginBottom="8.0dip" android:text="@string/instabug_str_action_submit" android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

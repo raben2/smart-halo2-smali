@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/leftBorder" android:tag="layout/help_card_item_header_0" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/helpCardTitleTextColor" android:id="@id/header" android:tag="layout/help_card_item_header_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding" android:layout_marginRight="@dimen/small_padding" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/rightBorder" android:tag="layout/help_card_item_header_2" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+</merge>

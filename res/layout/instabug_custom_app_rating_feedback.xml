@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/instabug_survey_dialog_container" android:background="@color/instabug_dialog_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="?survey_container_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ib_survey_custom_dialog_illustration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ib_ic_survey_apprating_light" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ib_core_dimen_16" android:layout_below="@id/ib_survey_custom_dialog_illustration" layout="@layout/survey_question_textview" />
+            <include android:visibility="visible" layout="@layout/item_close_survey_button" />
+            <include android:id="@id/ib_survey_custom_dialog_action_buttons_layout" layout="@layout/ib_survey_custom_dialog_action_buttons" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginBottom="6.0dip" android:layout_below="@id/ib_survey_custom_dialog_action_buttons_layout" layout="@layout/instabug_lyt_pbi" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

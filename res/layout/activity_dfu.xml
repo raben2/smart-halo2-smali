@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/activity_dfu_0" android:background="@color/veryBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/statusLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:layout_marginBottom="@dimen/margin_small">
+        <ImageView android:id="@id/topIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_249" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/statusLayout">
+        <ImageView android:id="@id/bubbleArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:background="@drawable/firmware_bg_bubble" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_below="@id/bubbleArrow">
+            <TextView android:id="@id/updateInfo" android:padding="@dimen/medium_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/progressLayout" android:background="@drawable/APKTOOL_DUMMY_df" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_below="@id/updateInfo" android:layout_centerHorizontal="true">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="15.0dip" android:progress="30" android:indeterminate="false" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/dfuProgressBar" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/lightGray" android:id="@id/updateDescription" android:paddingTop="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/progressLayout" android:layout_centerHorizontal="true" android:paddingStart="@dimen/large_padding" android:paddingEnd="@dimen/medium_padding" />
+            <TextView android:id="@id/updateWarning" android:paddingTop="@dimen/tiny_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dfu_available_warning" android:layout_below="@id/updateDescription" android:paddingStart="@dimen/medium_padding" android:paddingEnd="@dimen/medium_padding" />
+            <TextView android:id="@id/updateInstructions" android:padding="@dimen/medium_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dfu_available_instruction" android:layout_below="@id/updateWarning" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/progressButton" android:background="@drawable/onboarding_hub_button_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="@dimen/medium_padding">
+            <TextView android:textColor="@color/veryWhite" android:id="@id/progressButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dfu_update" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/lightGray" android:layout_gravity="center" android:id="@id/exitText" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_padding" android:text="@string/dfu_remind" />
+    </LinearLayout>
+</RelativeLayout>

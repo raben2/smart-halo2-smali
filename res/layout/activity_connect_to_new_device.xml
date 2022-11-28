@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/status_bar_layer" android:background="@color/veryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/no_saved_device" android:background="@color/veryWhite" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/veryDark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_smarthalo_wake_up" android:textAlignment="center" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/helpMenuText" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/new_smarthalo_wall_chargers" android:textAlignment="center" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/APKTOOL_DUMMY_1ab" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/confirm_understand_tuto" android:background="@drawable/confirm_button_background_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large">
+            <TextView android:textSize="16.0sp" android:textColor="@color/veryWhite" android:layout_gravity="center" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_smarthalo_info_confirm" android:textAlignment="center" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

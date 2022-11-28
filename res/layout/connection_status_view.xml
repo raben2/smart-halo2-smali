@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="36.0dip" android:layout_height="24.0dip" android:layout_marginRight="4.0dip" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center|left" android:id="@id/connected_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_244" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center|left" android:id="@id/connected_notification_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_245" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center|left" android:id="@id/disconnected_image_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_246" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center|left" android:id="@id/disconnected_notification_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_247" android:scaleType="centerInside" />
+    </FrameLayout>
+</merge>

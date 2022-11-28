@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="fill_parent" style="@style/InstabugBaseContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:divider="?android:listDivider" android:showDividers="middle" style="@style/InstabugBaseContainer">
+        <ListView android:scrollbarStyle="outsideInset" android:id="@id/instabug_lst_messages" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:stackFromBottom="true" android:transcriptMode="alwaysScroll" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="10.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/instabug_new_message_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="start|center" android:id="@id/instabug_btn_attach" android:padding="@dimen/ib_chat_padding_touchable_target_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_147" />
+                <EditText android:textColor="?instabug_foreground_color" android:layout_gravity="center_vertical" android:id="@id/instabug_edit_text_new_message" android:background="?instabug_background_color" android:padding="@dimen/ib_chat_padding_touchable_target_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:hint="@string/instabug_str_sending_message_hint" android:maxLines="5" android:minLines="1" android:singleLine="false" android:layout_weight="1.0" android:textCursorDrawable="@null" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/instabug_btn_send" android:padding="@dimen/ib_chat_padding_touchable_target_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_169" android:rotation="@integer/instabug_icon_lang_rotation" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

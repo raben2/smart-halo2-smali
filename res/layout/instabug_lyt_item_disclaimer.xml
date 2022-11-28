@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="normal" android:textColor="?instabug_theme_hint_text_color" android:gravity="left" android:id="@id/tvKey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0" />
+    <TextView android:gravity="right" android:id="@id/tvValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0" />
+</LinearLayout>

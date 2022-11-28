@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ptr_classic_header_rotate_view_header_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:id="@id/ib_ptr_header_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" style="?android:progressBarStyleSmallInverse" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ib_fr_color_ptr_loading_txt" android:id="@id/ptr_header_refreshing_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ib_feature_rq_str_load_more_loading_txt" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/ptr_classic_header_rotate_view_header_text" android:layout_alignTop="@id/ptr_classic_header_rotate_view_header_text" android:layout_alignBottom="@id/ptr_classic_header_rotate_view_header_text" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/ptr_classic_header_rotate_view" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="16.0dip" app:srcCompat="@drawable/ibg_fr_ic_arrow_upward" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/feature_request_add_layout" android:padding="@dimen/ib_fr_details_title_padding_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/feature_request_name_email_layout" android:layout_alignParentTop="true">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/feature_request_comment_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/feature_request_comment_edittext_layout" android:hint="@string/add_feature" style="@style/IbFrAddCommentEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:id="@id/feature_requests_comment_text_underline" android:background="?ib_fr_add_comment_edit_text_underline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/feature_request_name_email_layout" android:padding="@dimen/ib_fr_details_title_padding_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/feature_request_name_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/feature_request_name_edittext_layout" android:hint="@string/feature_requests_new_name" android:lines="1" android:singleLine="true" style="@style/IbFrAddCommentEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:id="@id/feature_requests_name_text_underline" android:background="?ib_fr_add_comment_edit_text_underline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ib_fr_space_16" android:layout_weight="1.5">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/feature_request_email_text_input_layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/feature_request_email_edittext_layout" android:hint="@string/feature_requests_new_email" style="@style/IbFrAddCommentEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:id="@id/feature_requests_email_text_underline" android:background="?ib_fr_add_comment_edit_text_underline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ib_fr_str_add_comment_disclaimer_txt_color" android:id="@id/feature_request_email_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/feature_requests_new_bottom_hint" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

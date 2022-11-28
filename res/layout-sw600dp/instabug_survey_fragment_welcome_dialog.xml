@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/instabug_dialog_survey_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="visible" layout="@layout/layout_shadow" />
+    <RelativeLayout android:orientation="vertical" android:background="?survey_container_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="visible" layout="@layout/item_close_survey_button" />
+        <TextView android:textSize="@dimen/survey_welcome_title_text_size" android:textStyle="normal" android:id="@id/ib_welcome_survey_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginTop="24.0dip" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:text="@string/instabug_survey_welcome_feedback" style="@style/InstabugSurveyDialogQuestion" />
+        <TextView android:textSize="@dimen/survey_welcome_subtitle_text_size" android:textStyle="normal" android:gravity="start" android:id="@id/ib_welcome_survey_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginTop="@dimen/survey_welcome_subtitle_text_margin_top" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:text="@string/instabug_survey_welcome_feedback_msg" android:layout_below="@id/ib_welcome_survey_title" android:lineSpacingExtra="6.0dip" android:fontFamily="sans-serif-medium" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="17.0sp" android:gravity="center" android:id="@id/ib_welcome_survey_take_survey" android:background="@drawable/ibg_survey_large_action_button" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginTop="24.0dip" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:layout_marginBottom="24.0dip" android:foreground="?android:selectableItemBackground" android:text="@string/instabug_survey_welcome_button" android:layout_above="@id/instabug_pbi_container" android:textAllCaps="true" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-16.0dip" android:layout_marginBottom="6.0dip" layout="@layout/instabug_lyt_pbi" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

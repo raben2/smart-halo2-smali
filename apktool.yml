@@ -1,0 +1,171 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: bike.smarthalo.app.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- META-INF/androidx.activity_activity.version
+- META-INF/androidx.appcompat_appcompat-resources.version
+- META-INF/androidx.appcompat_appcompat.version
+- META-INF/androidx.arch.core_core-runtime.version
+- META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version
+- META-INF/androidx.browser_browser.version
+- META-INF/androidx.cardview_cardview.version
+- META-INF/androidx.coordinatorlayout_coordinatorlayout.version
+- META-INF/androidx.core_core.version
+- META-INF/androidx.cursoradapter_cursoradapter.version
+- META-INF/androidx.customview_customview.version
+- META-INF/androidx.databinding_baseAdapters.version
+- META-INF/androidx.databinding_library.version
+- META-INF/androidx.documentfile_documentfile.version
+- META-INF/androidx.drawerlayout_drawerlayout.version
+- META-INF/androidx.exifinterface_exifinterface.version
+- META-INF/androidx.fragment_fragment.version
+- META-INF/androidx.interpolator_interpolator.version
+- META-INF/androidx.legacy_legacy-support-core-ui.version
+- META-INF/androidx.legacy_legacy-support-core-utils.version
+- META-INF/androidx.legacy_legacy-support-v4.version
+- META-INF/androidx.lifecycle_lifecycle-extensions.version
+- META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+- META-INF/androidx.lifecycle_lifecycle-livedata.version
+- META-INF/androidx.lifecycle_lifecycle-process.version
+- META-INF/androidx.lifecycle_lifecycle-runtime.version
+- META-INF/androidx.lifecycle_lifecycle-service.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel.version
+- META-INF/androidx.loader_loader.version
+- META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version
+- META-INF/androidx.media_media.version
+- META-INF/androidx.print_print.version
+- META-INF/androidx.recyclerview_recyclerview.version
+- META-INF/androidx.savedstate_savedstate.version
+- META-INF/androidx.slidingpanelayout_slidingpanelayout.version
+- META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version
+- META-INF/androidx.transition_transition.version
+- META-INF/androidx.vectordrawable_vectordrawable-animated.version
+- META-INF/androidx.vectordrawable_vectordrawable.version
+- META-INF/androidx.versionedparcelable_versionedparcelable.version
+- META-INF/androidx.viewpager_viewpager.version
+- META-INF/com.google.android.material_material.version
+- META-INF/com.google.dagger_dagger.version
+- META-INF/services/io.grpc.ManagedChannelProvider
+- META-INF/services/io.grpc.NameResolverProvider
+- png
+- mp4
+- gif
+- mp3
+- res/raw/joda_atlantic_jan_mayen
+- res/raw/joda_est
+- res/raw/joda_etc_gmt
+- res/raw/joda_etc_gmt_1
+- res/raw/joda_etc_gmt_10
+- res/raw/joda_etc_gmt_11
+- res/raw/joda_etc_gmt_12
+- res/raw/joda_etc_gmt_13
+- res/raw/joda_etc_gmt_14
+- res/raw/joda_etc_gmt_2
+- res/raw/joda_etc_gmt_3
+- res/raw/joda_etc_gmt_4
+- res/raw/joda_etc_gmt_5
+- res/raw/joda_etc_gmt_6
+- res/raw/joda_etc_gmt_7
+- res/raw/joda_etc_gmt_8
+- res/raw/joda_etc_gmt_9
+- res/raw/joda_etc_gmtplus1
+- res/raw/joda_etc_gmtplus10
+- res/raw/joda_etc_gmtplus11
+- res/raw/joda_etc_gmtplus12
+- res/raw/joda_etc_gmtplus2
+- res/raw/joda_etc_gmtplus3
+- res/raw/joda_etc_gmtplus4
+- res/raw/joda_etc_gmtplus5
+- res/raw/joda_etc_gmtplus6
+- res/raw/joda_etc_gmtplus7
+- res/raw/joda_etc_gmtplus8
+- res/raw/joda_etc_gmtplus9
+- res/raw/joda_etc_uct
+- res/raw/joda_etc_utc
+- res/raw/joda_hst
+- res/raw/joda_mst
+- res/raw/joda_pacific_johnston
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '30'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  LICENSE-junit.txt: '8'
+  androidsupportmultidexversion.txt: '0'
+  firebase-abt.properties: '8'
+  firebase-analytics.properties: '8'
+  firebase-common.properties: '8'
+  firebase-components.properties: '8'
+  firebase-crashlytics.properties: '8'
+  firebase-datatransport.properties: '8'
+  firebase-encoders-json.properties: '8'
+  firebase-inappmessaging-display.properties: '8'
+  firebase-inappmessaging.properties: '8'
+  firebase-installations-interop.properties: '8'
+  firebase-installations.properties: '8'
+  firebase-measurement-connector.properties: '8'
+  play-services-ads-identifier.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-clearcut.properties: '8'
+  play-services-location.properties: '8'
+  play-services-maps.properties: '8'
+  play-services-measurement-api.properties: '8'
+  play-services-measurement-base.properties: '8'
+  play-services-measurement-impl.properties: '8'
+  play-services-measurement-sdk-api.properties: '8'
+  play-services-measurement-sdk.properties: '8'
+  play-services-measurement.properties: '8'
+  play-services-phenotype.properties: '8'
+  play-services-places-placereport.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tasks.properties: '8'
+  protolite-well-known-types.properties: '8'
+  transport-api.properties: '8'
+  transport-backend-cct.properties: '8'
+  transport-runtime.properties: '8'
+  stamp-cert-sha256: '8'
+  google/protobuf/any.proto: '8'
+  google/protobuf/api.proto: '8'
+  google/protobuf/empty.proto: '8'
+  google/protobuf/field_mask.proto: '8'
+  google/protobuf/source_context.proto: '8'
+  google/protobuf/struct.proto: '8'
+  google/protobuf/timestamp.proto: '8'
+  google/protobuf/type.proto: '8'
+  google/protobuf/wrappers.proto: '8'
+  junit/runner/logo.gif: '0'
+  junit/runner/smalllogo.gif: '0'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
+  org/joda/time/format/messages.properties: '8'
+  org/joda/time/format/messages_cs.properties: '8'
+  org/joda/time/format/messages_da.properties: '8'
+  org/joda/time/format/messages_de.properties: '8'
+  org/joda/time/format/messages_en.properties: '0'
+  org/joda/time/format/messages_es.properties: '8'
+  org/joda/time/format/messages_fr.properties: '8'
+  org/joda/time/format/messages_it.properties: '8'
+  org/joda/time/format/messages_ja.properties: '8'
+  org/joda/time/format/messages_nl.properties: '8'
+  org/joda/time/format/messages_no.properties: '8'
+  org/joda/time/format/messages_pl.properties: '8'
+  org/joda/time/format/messages_pt.properties: '8'
+  org/joda/time/format/messages_ru.properties: '8'
+  org/joda/time/format/messages_tr.properties: '8'
+  org/spongycastle/x509/CertPathReviewerMessages.properties: '8'
+  org/spongycastle/x509/CertPathReviewerMessages_de.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.1
+versionInfo:
+  versionCode: '646'
+  versionName: 1.18.0

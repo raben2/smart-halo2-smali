@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="bike.smarthalo.app" platformBuildVersionCode="646" platformBuildVersionName="1.18.0">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-feature android:name="android.hardware.location" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@drawable/APKTOOL_DUMMY_1a3" android:isSplitRequired="true" android:label="@string/app_name" android:name="bike.smarthalo.app.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.LaunchActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/title_activity_scan_results" android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.ScanResultsActivity" android:parentActivityName="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Settings"/>
+        <activity android:label="@string/title_activity_scan_results" android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.ConnectToNewDeviceActivity" android:parentActivityName="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Settings"/>
+        <activity android:label="@string/title_activity_tap_code" android:name="bike.smarthalo.app.activities.TapCodeActivity" android:parentActivityName="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.AlarmTapCode"/>
+        <activity android:label="@string/title_activity_tap_code" android:name="bike.smarthalo.app.activities.FitnessSetGoalActivity" android:parentActivityName="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FitnessGoal"/>
+        <activity android:label="@string/title_activity_forget_device" android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.ForgetDeviceActivity" android:parentActivityName="bike.smarthalo.app.activities.ScanResultsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Settings"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.WebBrowserActivity" android:parentActivityName="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Settings"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.DFUActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.TouchInputsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.AssistantBase"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.DailyRidesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.DailyRides"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.LinkedAccountsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.GenericPage">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile.smarthalo.bike" android:scheme="smarthalo"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.StravaSettingsActivity" android:screenOrientation="portrait" android:theme="@style/stravaSettings"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.AssistantNotificationsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.AssistantBase"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.activities.DebugMenuActivity" android:parentActivityName="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Settings"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.onboarding.OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Default" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.permissions.PermissionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.profile.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.GenericPage" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.designRefresh.DRMainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Default" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.onboarding.installInstructions.InstallInstructionsActivity" android:parentActivityName="bike.smarthalo.app.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Settings"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.onboarding.legacy.OldOnboardingInstructionsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.OnboardingInstructions"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.onboarding.legacy.OldOnboardingHelpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.OnboardingInstructions"/>
+        <activity android:launchMode="singleTask" android:name="bike.smarthalo.app.onboarding.legacy.OldOnboardingHelpMountingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.OnboardingInstructions"/>
+        <service android:exported="false" android:name="bike.smarthalo.app.services.SHCentralService"/>
+        <service android:exported="false" android:name="bike.smarthalo.app.services.SHLocationService"/>
+        <service android:name="bike.smarthalo.app.navigation.SHDirectionService" android:stopWithTask="true"/>
+        <service android:name="bike.smarthalo.app.services.SHDFUService"/>
+        <service android:name="bike.smarthalo.app.services.NotificationsHandlerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:process=":notificationProcess">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:name="bike.smarthalo.app.services.RidesUploadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.PastRidesJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.DeleteRideJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.StravaUploadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.UpdateRideJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.UserJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.UserSettingsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.TokenRefreshJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="bike.smarthalo.app.services.DeviceConnectionJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_api_key"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <meta-data android:name="io.sentry.breadcrumbs.activity-lifecycle" android:value="false"/>
+        <meta-data android:name="io.sentry.breadcrumbs.app-lifecycle" android:value="false"/>
+        <meta-data android:name="io.sentry.breadcrumbs.system-events" android:value="false"/>
+        <meta-data android:name="io.sentry.breadcrumbs.app-components" android:value="false"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.instabug.survey.ui.SurveyActivity" android:theme="@style/InstabugTranslucentSdkTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.instabug.survey.announcements.ui.activity.AnnouncementActivity" android:theme="@style/InstabugTranslucentSdkTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.survey.network.service.InstabugSurveysSubmitterService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.survey.announcements.network.InstabugAnnouncementSubmitterService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.crash.network.InstabugCrashesUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.anr.network.InstabugAnrUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.instabug.bug.view.reporting.ReportingContainerActivity" android:theme="@style/InstabugSdkTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="instabug-disclaimer.com" android:scheme="instabug-bug"/>
+                <data android:host="instabug-disclaimer.com" android:scheme="repro-steps-disclaimer"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.instabug.bug.network.InstabugBugsUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.bug.view.actionList.service.ReportCategoriesService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.instabug.chat.ui.ChatActivity" android:theme="@style/InstabugSdkTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.chat.network.InstabugMessageUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.instabug.chat.network.InstabugPushNotificationTokenService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.instabug.featuresrequest.ui.FeaturesRequestActivity" android:theme="@style/Theme.AppCompat" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.featuresrequest.network.service.FeaturesRequestVoteService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="bike.smarthalo.app.applaunch.contentprovider.AppLaunchContentProvider" android:exported="false" android:initOrder="2147483647" android:name="com.instabug.apm.contentprovider.APMContentProvider"/>
+        <service android:name="com.instabug.library.analytics.network.InstabugAnalyticsUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.instabug.library.internal.video.RequestPermissionActivity" android:theme="@style/InstabugTranslucentSdkTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.instabug.library.invocation.invocationdialog.InstabugDialogActivity" android:theme="@style/InstabugTranslucentSdkTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.instabug.library.ui.onboarding.OnboardingActivity" android:theme="@style/InstabugTranslucentSdkTheme"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.instabug.library.internal.video.ScreenRecordingService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.instabug.library.screenshot.ScreenshotCaptureService"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteThemeOverlay" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="bike.smarthalo.sdk.BluetoothConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="bike.smarthalo.sdk.ScanReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="bike.smarthalo.sdk.bluetooth.BootloaderScanner"/>
+        <service android:name="bike.smarthalo.sdk.SHDeviceService"/>
+        <activity android:name="bike.smarthalo.sdk.RequestPermissionsActivity" android:theme="@style/SdkBaseTheme"/>
+        <provider android:authorities="bike.smarthalo.app.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="bike.smarthalo.app.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="bike.smarthalo.app.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="bike.smarthalo.app.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="ignore" android:value="ignore"/>
+        <activity android:name="pl.brightinventions.slf4android.NotifyDeveloperDialogDisplayActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

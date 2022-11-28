@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/back_icon_wrapper" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/center_content_wrapper" android:background="@drawable/search_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/medium_padding" android:layout_weight="1.0" android:layout_toEndOf="@id/left_drawer_icon_clickable">
+        <androidx.appcompat.widget.SearchView android:theme="@style/search_text" android:gravity="center_vertical" android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="29.0dip" android:queryHint="@string/search_hint" android:searchIcon="@null" app:searchIcon="@null" searchIcon="@null" />
+    </RelativeLayout>
+</merge>

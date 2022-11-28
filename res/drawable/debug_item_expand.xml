@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="4.0dip" android:color="@color/veryBlack" />
+            <size android:height="32.0dip" android:width="32.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="15.0dip" android:top="11.0dip" android:right="15.0dip" android:bottom="9.0dip">
+        <rotate android:fromDegrees="90.0">
+            <vector android:height="26.0dip" android:width="16.0dip" android:viewportWidth="8.0" android:viewportHeight="13.0">
+                <path android:fillColor="@color/veryBlack" android:pathData="M1.333,13L8,6.5L1.333,0L0,1.3L5.333,6.5L0,11.7L1.333,13Z" />
+            </vector>
+        </rotate>
+    </item>
+</layer-list>

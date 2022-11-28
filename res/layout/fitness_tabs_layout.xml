@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="97.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.google.android.material.tabs.TabLayout android:id="@id/sliding_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabBackground="@color/veryWhite" app:tabIndicatorColor="@color/fitnessPink" app:tabSelectedTextColor="@color/fitnessPink" app:tabTextAppearance="@style/fitness_tab_layout" app:tabTextColor="@color/grayText"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    </LinearLayout>
+    <layout.statusBar.StatusBarLayout android:theme="@style/fitnessHelpCardTheme" android:layout_gravity="bottom" android:id="@id/fitnessStatusBar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:helpCardDescriptionText="@string/fitness_help_card_description" app:helpCardTitleText="@string/fitness_help_card_title" app:offIcon="@drawable/fitness_off_shape" app:offText="@string/fitness_status_off" app:onIcon="@drawable/fitness_on_shape" app:onText="@string/fitness_status_on" app:themeColor="@color/fitnessPink" app:titleText="@string/fitness_status_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/fitness_help_card_goal_title" app:headerThemeColor="@color/fitnessPink" style="@style/helpCardItemHeader" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margin_medium">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/APKTOOL_DUMMY_e3" android:scaleType="centerInside" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/completedRideGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_help_card_distance" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/APKTOOL_DUMMY_263" android:scaleType="centerInside" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/completedRideGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_help_card_time" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/APKTOOL_DUMMY_a3" android:scaleType="centerInside" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/completedRideGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_help_card_calories" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/APKTOOL_DUMMY_ac" android:scaleType="centerInside" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/completedRideGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_help_card_co2" android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/completedRideGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fitness_help_card_goal_percentage" />
+            <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/fitness_cp" style="@style/helpCardVideo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <layout.statusBar.HelpCardItemHeader android:layout_width="fill_parent" android:layout_height="wrap_content" app:headerText="@string/fitness_help_card_speedometer_title" app:headerThemeColor="@color/fitnessPink" style="@style/helpCardItemHeader" />
+            <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/APKTOOL_DUMMY_24e" android:scaleType="centerInside" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/completedRideGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitness_help_card_time" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/completedRideGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margin_medium" android:text="@string/fitness_help_card_speed_description" android:textAlignment="center" />
+            <layout.statusBar.HelpCardVideo android:layout_width="wrap_content" android:layout_height="wrap_content" app:url="@raw/speedo_cp" style="@style/helpCardVideo" />
+        </LinearLayout>
+    </layout.statusBar.StatusBarLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|top" android:orientation="vertical" android:background="@color/veryWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/statusBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/veryBlack" android:id="@id/header" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/onboarding_header_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onboarding_terms_full_header" android:layout_below="@id/statusBar" />
+    <WebView android:id="@id/termsWebview" android:background="@color/veryWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_above="@id/buttons" android:layout_below="@id/header" />
+    <ImageView android:id="@id/spacerTop" android:background="@drawable/gradient_white_to_gray" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_below="@id/header" android:layout_alignTop="@id/termsWebview" />
+    <ImageView android:id="@id/spacerBottom" android:background="@drawable/gradient_gray_to_white" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignBottom="@id/termsWebview" />
+    <LinearLayout android:id="@id/buttons" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="55.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/declineTerms" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginRight="4.0dip" android:text="@string/onboarding_terms_full_decline" android:layout_weight="1.0" style="@style/onboardingGrayButton" />
+        <Button android:id="@id/acceptTerms" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="4.0dip" android:text="@string/onboarding_terms_full_accept" android:layout_weight="1.0" style="@style/onboardingGreenButton" />
+    </LinearLayout>
+</RelativeLayout>

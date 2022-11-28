@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:background="@color/veryWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <layout.MainToolbarLayout android:id="@id/main_toolbar_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        <FrameLayout android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <include android:id="@id/tab_layout_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tab_layout" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/gray_overlay_container" android:background="@color/helpCardOverlay" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/search_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/new_features_webview_container" android:background="@drawable/modal_background" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <WebView android:id="@id/new_features_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/new_features_webview_close_button" android:background="@drawable/APKTOOL_DUMMY_aa" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="15.0dip" />
+    </FrameLayout>
+    <layout.LeftDrawerLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/left_drawer_layout" android:clickable="true" android:layout_width="@dimen/drawer_width" android:layout_height="fill_parent" />
+    <layout.RightDrawerLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/right_drawer_layout" android:background="#ffffffff" android:clickable="true" android:layout_width="@dimen/drawer_width" android:layout_height="fill_parent" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:id="@id/instabug_recording_audio_dialog_container" style="@style/InstabugDialogContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?instabug_background_color" android:paddingTop="14.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/instabug_normal_text_size" android:gravity="center" android:id="@id/instabug_txt_recording_title" android:text="@string/instabug_str_hold_to_record" style="@style/InstabugText" />
+        <TextView android:gravity="center" android:id="@id/instabug_txt_timer" android:paddingTop="5.0dip" style="@style/InstabugText" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/instabug_btn_record_audio" android:background="?instabug_background_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/instabug_bk_record_audio" android:layout_width="51.0dip" android:layout_height="51.0dip" android:src="@drawable/ibg_core_bg_default_record" />
+            <ImageView android:layout_gravity="center" android:id="@id/instabug_img_record_audio" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/APKTOOL_DUMMY_152" android:tint="?instabug_theme_tinting_color" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

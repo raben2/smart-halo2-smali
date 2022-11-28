@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/backgroundGray" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/assistantBlue" android:ellipsize="end" android:layout_gravity="start|center" android:id="@id/touch_input_settings_title_label" android:paddingBottom="@dimen/small_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/touch_input_settings_title" android:maxLines="1" android:layout_marginStart="@dimen/margin_medium" />
+    <FrameLayout android:background="@color/veryWhite" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="41.0dip">
+        <TextView android:textSize="18.0sp" android:ellipsize="end" android:layout_gravity="start|center" android:id="@id/touch_sound_switch_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/touch_input_sound_label" android:maxLines="1" android:layout_marginStart="@dimen/margin_medium" />
+        <Switch android:layout_gravity="end|center" android:id="@id/touch_sound_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+    </FrameLayout>
+    <ImageView android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0px"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/veryWhite" android:layout_width="fill_parent" android:layout_height="41.0dip">
+        <ImageView android:id="@id/volumeLow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_8b" android:layout_marginStart="@dimen/margin_medium" />
+        <android.widget.SeekBar android:layout_gravity="center" android:id="@id/touch_sound_volume_slider" android:layout_width="0.0dip" android:layout_height="wrap_content" android:progress="40" android:secondaryProgress="100" android:thumb="@drawable/APKTOOL_DUMMY_23f" android:layout_weight="1.0" />
+        <ImageView android:id="@id/volumeHigh" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_8a" android:layout_marginEnd="@dimen/margin_medium" />
+    </LinearLayout>
+    <ImageView android:background="@color/spacerGray" android:layout_width="fill_parent" android:layout_height="1.0px"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

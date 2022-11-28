@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/InstabugBaseToolbarContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/instabug_btn_toolbar_left" android:src="@drawable/APKTOOL_DUMMY_14e" android:tint="?instabug_theme_tinting_color" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/InstabugTopDialogButton" />
+    <TextView android:ellipsize="end" android:id="@id/instabug_fragment_title" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:maxLines="1" android:layout_toLeftOf="@id/instabug_btn_toolbar_right" android:layout_toRightOf="@id/instabug_btn_toolbar_left" android:layout_centerVertical="true" android:layout_toStartOf="@id/instabug_btn_toolbar_right" android:layout_toEndOf="@id/instabug_btn_toolbar_left" style="@style/InstabugToolbarTitle" />
+    <ImageButton android:id="@id/instabug_btn_toolbar_right" android:tint="?instabug_theme_tinting_color" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="@integer/instabug_icon_lang_rotation" android:layout_alignParentEnd="true" style="@style/InstabugTopDialogButton" />
+</RelativeLayout>

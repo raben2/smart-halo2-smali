@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/relativeLayout_new_feature" android:background="?instabug_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/input_layout_container" android:paddingLeft="@dimen/instabug_container_padding" android:paddingTop="@dimen/ib_fr_space_4" android:paddingRight="@dimen/instabug_container_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/instabug_container_padding">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/input_title" android:hint="@string/feature_requests_new_title" android:singleLine="true" style="@style/IbFrAddCommentEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:id="@id/title_underline" android:background="?ib_fr_add_comment_edit_text_underline_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/input_layout_description_container" android:paddingLeft="@dimen/instabug_container_padding" android:paddingRight="@dimen/instabug_container_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ib_fr_space_16" android:layout_below="@id/input_layout_container">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout_description" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/input_description" android:hint="@string/feature_requests_new_description" style="@style/IbFrAddCommentEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:id="@id/description_underline" android:background="?ib_fr_add_comment_edit_text_underline_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/txtBottomHintLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:gravity="center" android:id="@id/txtBottomHint" android:background="?ib_fr_str_add_comment_disclaimer" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/feature_requests_new_bottom_hint" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/feature_request_name_email_layout" android:padding="@dimen/ib_fr_details_title_padding_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/txtBottomHintLayout">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/name_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/input_name" android:hint="@string/feature_requests_new_name" android:lines="1" android:singleLine="true" style="@style/IbFrAddCommentEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:id="@id/name_underline" android:background="?ib_fr_add_comment_edit_text_underline_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.5">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/email_text_input_layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/input_email" android:hint="@string/feature_requests_new_email" style="@style/IbFrAddCommentEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:id="@id/email_underline" android:background="?ib_fr_add_comment_edit_text_underline_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

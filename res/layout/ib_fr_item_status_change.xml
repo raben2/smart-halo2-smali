@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/ib_fr_space_24" android:paddingTop="@dimen/ib_fr_space_8" android:paddingRight="@dimen/ib_fr_space_24" android:paddingBottom="@dimen/ib_fr_space_8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?ib_fr_details_comments_status_separator_color" android:layout_width="26.0dip" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:id="@id/features_request_status_change_txt_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/ib_fr_details_comments_status_change_light" android:id="@id/changed_to_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feature_request_status_changed_to" />
+            <TextView android:textSize="12.0sp" android:id="@id/instabug_feature_request_new_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feature_request_status_changed_to" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/ib_fr_details_comments_status_change_light" android:gravity="center" android:id="@id/instabug_feature_request_new_status_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/features_request_status_change_txt_layout" />
+    </RelativeLayout>
+    <View android:background="?ib_fr_details_comments_status_separator_color" android:layout_width="26.0dip" android:layout_height="1.0dip" />
+</LinearLayout>

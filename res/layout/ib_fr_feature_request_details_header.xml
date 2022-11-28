@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ib_fr_details_title_padding_left_right" android:paddingTop="@dimen/ib_fr_space_20" android:paddingRight="@dimen/ib_fr_details_title_padding_left_right" android:paddingBottom="@dimen/ib_fr_space_20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="?ib_fr_details_title" android:id="@id/ib_fr_details_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="15.0sp" android:textColor="?ib_fr_details_subtitle" android:id="@id/ib_fr_tv_feature_details_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ib_fr_space_16" android:lineSpacingMultiplier="1.4" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ib_fr_space_24">
+        <TextView android:id="@id/instabug_txt_feature_request_status" android:paddingTop="1.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_margin="0.0dip" android:layout_alignBottom="@id/ib_btn_fr_vote" style="@style/IbFrFeatureStatus" />
+        <TextView android:textSize="12.0sp" android:textColor="?ib_fr_details_owner" android:id="@id/ib_txt_feature_request_owner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ib_fr_space_16" android:layout_marginRight="@dimen/ib_fr_space_16" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="?ib_fr_details_date" android:id="@id/ib_txt_feature_request_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ib_fr_space_24" layout="@layout/ib_fr_view_separator" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?instabug_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/ib_empty_state_stub" android:layout="@layout/ib_fr_features_list_empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/sortingActionsLayoutRoot" android:visibility="visible" layout="@layout/ib_fr_sort_bar_layout" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/ib_features_request_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

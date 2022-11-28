@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/instabug_text_view_question" android:layout_width="fill_parent" android:layout_height="wrap_content" app:autoSizeMaxTextSize="@dimen/survey_question_title" app:autoSizeMinTextSize="12.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" style="@style/InstabugSurveyDialogQuestion"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

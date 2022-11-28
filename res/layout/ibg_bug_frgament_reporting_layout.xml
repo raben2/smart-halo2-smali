@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/InstabugBaseContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="insideOverlay" android:id="@id/ib_bug_scroll_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip">
+        <LinearLayout android:orientation="vertical" android:background="?instabug_background_color" android:paddingBottom="@dimen/ib_dimen_bug_attachments_space_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/instabug_edit_text_email" android:hint="@string/instabug_str_email_hint" android:singleLine="true" android:inputType="textEmailAddress" style="@style/InstabugEditTextStyle" />
+            <View android:background="?instabug_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <ViewStub android:id="@id/instabug_viewstub_phone" android:layout="@layout/ibg_bug_view_edittext_phonenumber" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <EditText android:id="@id/instabug_edit_text_message" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" style="@style/InstabugEditTextStyle" />
+            <View android:background="?instabug_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textColor="?instabug_theme_hint_text_color" android:id="@id/instabug_text_view_disclaimer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/InstabugEditTextStyle" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/instabug_lyt_attachments_list" android:layout_width="fill_parent" android:layout_height="@dimen/ib_dimen_bug_attachments_row_height" android:layout_marginTop="12.0dip" />
+            <TextView android:textColor="?instabug_theme_hint_text_color" android:id="@id/instabug_text_view_repro_steps_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/InstabugReproStepsDisclaimerTextStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ibg_bug_attachments_action_bar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
